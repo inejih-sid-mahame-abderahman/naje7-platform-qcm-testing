@@ -1,0 +1,3105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>توجيهي 2.0 — من التوجيه إلى النجاح | Tewjihi</title>
+    <meta name="description" content="توجيهي 2.0 يساعد الطلاب الموريتانيين على تحويل تخصصهم الجامعي إلى خارطة طريق أكاديمية ومهنية عملية.">
+    <meta name="theme-color" content="#2563EB">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="توجيهي 2.0 — تخصصك هو البداية فقط">
+    <meta property="og:description" content="اكتشف خارطة طريق تساعدك على تحويل تخصصك الجامعي إلى مهارات، مشاريع، خبرة وفرص.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tewjihi.vercel.app/">
+    <meta property="og:locale" content="ar_MR">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="توجيهي 2.0 — تخصصك هو البداية فقط">
+    <meta name="twitter:description" content="اكتشف خارطة طريق تساعدك على تحويل تخصصك الجامعي إلى مهارات، مشاريع، خبرة وفرص.">
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1D4ED8;
+            --primary-light: #DBEAFE;
+            --secondary: #0EA5E9;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --bg: #F8FAFC;
+            --white: #FFFFFF;
+            --text-main: #0F172A;
+            --text-secondary: #475569;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+            --dark-bg: #0B1120;
+            --dark-card: #111827;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ===== DARK MODE ===== */
+        [data-theme="dark"] {
+            --bg: #0B1120;
+            --white: #111827;
+            --text-main: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --text-muted: #64748B;
+            --border: #1E293B;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+            --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
+            --primary-light: #1E3A5F;
+        }
+        [data-theme="dark"] .bg-surface { background: #1E293B; }
+        [data-theme="dark"] .bg-surface-light { background: #334155; }
+        [data-theme="dark"] .card { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .text-muted { color: #94A3B8; }
+        [data-theme="dark"] .hero { background: #0B1120; }
+        [data-theme="dark"] .hero-card { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .step-card { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .step-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.4); }
+        [data-theme="dark"] .feature-item { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .faq-item { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .price-card { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .price-card.featured { background: linear-gradient(180deg, #1E293B 0%, #0B1120 100%); border-color: var(--primary); }
+        [data-theme="dark"] .nav { background: rgba(17, 24, 39, 0.94); border-color: #1E293B; }
+        [data-theme="dark"] .mindmap-container { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .mindmap-container::before { background: linear-gradient(180deg, transparent, #2563EB33, transparent); }
+        [data-theme="dark"] .branch-item { background: #111827; border-color: #334155; }
+        [data-theme="dark"] .branch-item:hover { border-color: var(--primary); }
+        [data-theme="dark"] .year-card { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .year-card .year-items .item-group { background: #111827; }
+        [data-theme="dark"] .sub-mindmap { background: #111827; border-color: #334155; }
+        [data-theme="dark"] .sub-mindmap .sub-node { background: #1E293B; border-color: #334155; color: #E2E8F0; }
+        [data-theme="dark"] .sub-mindmap .sub-node:hover { background: #2563EB33; border-color: var(--primary); }
+        [data-theme="dark"] .company-card { background: #111827; border-color: #334155; }
+        [data-theme="dark"] .company-card:hover { background: #1E293B; }
+        [data-theme="dark"] .testimonials-section { background: #0B1120; }
+        [data-theme="dark"] .testimonial-card { background: rgba(255,255,255,0.03); border-color: #1E293B; }
+        [data-theme="dark"] .testimonial-card:hover { background: rgba(255,255,255,0.06); }
+        [data-theme="dark"] .consultation-card { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .footer { background: #0B1120; border-color: #1E293B; }
+        [data-theme="dark"] .stats-bar { background: #0B1120; }
+        [data-theme="dark"] .stat-item:not(:last-child)::after { background: rgba(255,255,255,0.08); }
+        [data-theme="dark"] .lang-switcher { background: #1E293B; border-color: #334155; color: #94A3B8; }
+        [data-theme="dark"] .lang-switcher:hover { background: #2563EB22; border-color: var(--primary); }
+        [data-theme="dark"] .modal-content { background: #1E293B; border-color: #334155; }
+        [data-theme="dark"] .search-result-preview { background: #1E293B; border-color: #334155; }
+
+        /* ===== RESET & BASE ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Noto Sans Arabic', 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background var(--transition), color var(--transition);
+            overflow-x: hidden;
+        }
+        body.lang-fr { font-family: 'DM Sans', 'Noto Sans Arabic', sans-serif; }
+        body.lang-en { font-family: 'Inter', 'Noto Sans Arabic', sans-serif; }
+
+        a { text-decoration: none; color: inherit; }
+        button { cursor: pointer; font-family: inherit; border: none; background: none; }
+        img { max-width: 100%; display: block; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section-padding { padding: 80px 0; }
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .section-desc {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            line-height: 1.8;
+        }
+        .text-center { text-align: center; }
+        .text-center .section-desc { margin: 0 auto; }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: var(--primary);
+            color: white;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all var(--transition);
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+        }
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(37, 99, 235, 0.4);
+        }
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: transparent;
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all var(--transition);
+        }
+        .btn-secondary:hover {
+            border-color: var(--text-main);
+            transform: translateY(-2px);
+        }
+        .btn-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: var(--white);
+            color: var(--primary);
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all var(--transition);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition);
+        }
+        .card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+
+        /* ===== NAVIGATION ===== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background var(--transition), border-color var(--transition);
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 900;
+            font-size: 1.4rem;
+            color: var(--text-main);
+        }
+        .nav-logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            list-style: none;
+        }
+        .nav-links a {
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: all var(--transition);
+        }
+        .nav-links a:hover { color: var(--text-main); background: var(--border); }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .nav-actions .btn-login {
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            transition: all var(--transition);
+        }
+        .nav-actions .btn-login:hover { color: var(--text-main); background: var(--border); }
+        .nav-actions .btn-cta {
+            padding: 10px 24px;
+            background: var(--primary);
+            color: white;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all var(--transition);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+        .nav-actions .btn-cta:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+        }
+
+        .lang-switcher {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 6px 12px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: all var(--transition);
+            cursor: pointer;
+        }
+        .lang-switcher:hover { border-color: var(--primary); color: var(--primary); }
+        .lang-switcher .lang-option { padding: 2px 6px; border-radius: 4px; transition: all var(--transition); }
+        .lang-switcher .lang-option.active { background: var(--primary); color: white; }
+        .lang-switcher .divider { opacity: 0.3; }
+
+        .theme-toggle {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            transition: all var(--transition);
+        }
+        .theme-toggle:hover { border-color: var(--primary); }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-main);
+            border-radius: 2px;
+            transition: all var(--transition);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 72px;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 24px;
+            flex-direction: column;
+            gap: 4px;
+            z-index: 99;
+            box-shadow: var(--shadow-md);
+        }
+        .mobile-menu.open { display: flex; }
+        .mobile-menu a {
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: all var(--transition);
+        }
+        .mobile-menu a:hover { background: var(--border); color: var(--text-main); }
+        .mobile-menu .btn-cta-mobile {
+            margin-top: 8px;
+            padding: 14px;
+            background: var(--primary);
+            color: white;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .mobile-menu { display: none; }
+            .mobile-menu.open { display: flex; }
+        }
+        @media (max-width: 640px) {
+            .nav { padding: 0 16px; height: 64px; }
+            .nav-logo { font-size: 1.1rem; }
+            .nav-logo-icon { width: 30px; height: 30px; font-size: 1rem; }
+            .nav-actions .btn-login { display: none; }
+            .nav-actions .btn-cta { padding: 8px 16px; font-size: 0.8rem; }
+            .theme-toggle { width: 34px; height: 34px; font-size: 1rem; }
+            .lang-switcher { font-size: 0.7rem; padding: 4px 10px; }
+        }
+
+        /* ===== HERO (CINEMATIC UPGRADE) ===== */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0B1120;
+            overflow: hidden;
+            padding: 0 24px;
+            transition: background var(--transition);
+        }
+
+        .hero-video-wrapper {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .hero-video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(11, 17, 32, 0.65);
+            background: linear-gradient(135deg, rgba(11, 17, 32, 0.8) 0%, rgba(11, 17, 32, 0.3) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .hero-eyebrow .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse-dot 2s infinite;
+        }
+
+        .hero-title-main {
+            font-size: clamp(2.8rem, 6vw, 4.8rem);
+            font-weight: 900;
+            line-height: 1.1;
+            color: white;
+            letter-spacing: -0.02em;
+        }
+        .hero-title-main .highlight {
+            color: var(--primary);
+            position: relative;
+        }
+        .hero-title-main .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .hero-sub-text {
+            font-size: clamp(1rem, 1.4vw, 1.25rem);
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 500px;
+            line-height: 1.8;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .hero-cta-group .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 24px rgba(37, 99, 235, 0.35);
+        }
+        .hero-cta-group .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(37, 99, 235, 0.45);
+        }
+
+        .hero-cta-group .btn-play {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 28px;
+            border-radius: 100px;
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all var(--transition);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(4px);
+        }
+        .hero-cta-group .btn-play:hover {
+            border-color: white;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        .hero-cta-group .btn-play .play-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(255, 255, 255, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all var(--transition);
+        }
+        .hero-cta-group .btn-play:hover .play-icon {
+            border-color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-trust-badge {
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        .hero-trust-badge .divider {
+            width: 1px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Right side - Video placeholder / visual */
+        .hero-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-visual .play-btn-large {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            color: white;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            z-index: 5;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+        }
+        .hero-visual .play-btn-large:hover {
+            transform: scale(1.08);
+            border-color: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 12px 60px rgba(37, 99, 235, 0.2);
+        }
+
+        .hero-visual .play-btn-large .icon {
+            margin-right: 4px;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 60px 0;
+            }
+            .hero-sub-text {
+                max-width: 100%;
+            }
+            .hero-cta-group {
+                justify-content: center;
+            }
+            .hero-trust-badge {
+                justify-content: center;
+            }
+            .hero-visual .play-btn-large {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                min-height: 90vh;
+                padding: 0 16px;
+            }
+            .hero-title-main {
+                font-size: clamp(2rem, 10vw, 2.8rem);
+            }
+            .hero-cta-group .btn-play {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+            .hero-cta-group .btn-play .play-icon {
+                width: 34px;
+                height: 34px;
+                font-size: 0.8rem;
+            }
+            .hero-visual .play-btn-large {
+                width: 64px;
+                height: 64px;
+                font-size: 1.6rem;
+            }
+            .hero-trust-badge {
+                font-size: 0.8rem;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .hero-trust-badge .divider {
+                display: none;
+            }
+        }
+
+        /* ===== VIDEO MODAL ===== */
+        .video-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 300;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(20px);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .video-modal.active {
+            display: flex;
+        }
+        .video-modal-content {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+        }
+        .video-modal-content video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+        }
+        .video-modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1.4rem;
+            cursor: pointer;
+            transition: all var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        .video-modal-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        @media (max-width: 640px) {
+            .video-modal-close {
+                top: 8px;
+                right: 8px;
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
+            }
+        }
+
+        /* ===== STATS ===== */
+        .stats-bar {
+            background: var(--text-main);
+            padding: 40px 24px;
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            flex-wrap: wrap;
+            transition: background var(--transition);
+        }
+        .stat-item {
+            text-align: center;
+            padding: 16px 48px;
+            position: relative;
+        }
+        .stat-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 40px;
+            width: 1px;
+            background: rgba(255,255,255,0.12);
+        }
+        .stat-item .num {
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: var(--primary);
+            line-height: 1;
+        }
+        .stat-item .label {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 4px;
+        }
+        @media (max-width: 768px) {
+            .stat-item { padding: 12px 24px; }
+            .stat-item:not(:last-child)::after { display: none; }
+            .stat-item .num { font-size: 1.8rem; }
+        }
+
+        /* ===== WHAT CHANGED ===== */
+        .changed-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 24px;
+            align-items: stretch;
+            margin-top: 48px;
+        }
+        .changed-card {
+            padding: 32px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: var(--white);
+            transition: all var(--transition);
+        }
+        .changed-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+        .changed-card .icon { font-size: 2.4rem; margin-bottom: 12px; }
+        .changed-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; }
+        .changed-card p { color: var(--text-secondary); font-size: 0.95rem; }
+        .changed-card ul {
+            list-style: none;
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .changed-card ul li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .changed-card ul li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: 700;
+        }
+        .changed-card.featured {
+            border-color: var(--primary);
+            background: rgba(37,99,235,0.03);
+            box-shadow: 0 0 0 2px rgba(37,99,235,0.1);
+        }
+        .changed-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--text-muted);
+            padding: 0 8px;
+        }
+        @media (max-width: 768px) {
+            .changed-grid { grid-template-columns: 1fr; }
+            .changed-arrow { transform: rotate(90deg); padding: 8px 0; }
+        }
+
+        /* ===== JOURNEY / TIMELINE ===== */
+        .journey {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            margin-top: 48px;
+            position: relative;
+        }
+        .journey::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            bottom: 40px;
+            width: 2px;
+            background: var(--border);
+            right: 50%;
+            transform: translateX(50%);
+        }
+        .journey-step {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px 0;
+            position: relative;
+        }
+        .journey-step:nth-child(odd) { flex-direction: row; }
+        .journey-step:nth-child(even) { flex-direction: row-reverse; }
+        .journey-step .num {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            z-index: 2;
+        }
+        .journey-step .content {
+            flex: 1;
+            background: var(--white);
+            padding: 16px 20px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            transition: all var(--transition);
+        }
+        .journey-step .content:hover { box-shadow: var(--shadow-md); }
+        .journey-step .content h4 { font-weight: 700; font-size: 1rem; }
+        .journey-step .content p { font-size: 0.9rem; color: var(--text-secondary); }
+        @media (max-width: 640px) {
+            .journey-step { flex-direction: column !important; text-align: center; }
+            .journey-step .content { width: 100%; }
+            .journey::before { display: none; }
+        }
+
+        /* ===== MIND MAP ===== */
+        .mindmap-container {
+            position: relative;
+            padding: 40px 20px;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: background var(--transition), border-color var(--transition);
+            margin-top: 48px;
+        }
+        .mindmap-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 2px;
+            height: 70%;
+            background: linear-gradient(180deg, transparent, var(--border), transparent);
+        }
+        .mindmap-center {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 40px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 12px 40px rgba(37,99,235,0.3);
+            transition: all var(--transition);
+            cursor: default;
+        }
+        .mindmap-center:hover { transform: scale(1.05); }
+        .mindmap-center .icon { font-size: 2rem; }
+        .mindmap-branches {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 40px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .mindmap-branch {
+            padding: 12px 16px;
+            background: var(--bg);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            transition: all var(--transition);
+            cursor: default;
+        }
+        .mindmap-branch:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+        .mindmap-branch .title { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
+        .mindmap-branch .items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 8px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        .mindmap-branch .items span {
+            background: var(--white);
+            padding: 2px 10px;
+            border-radius: 100px;
+            border: 1px solid var(--border);
+        }
+        @media (max-width: 640px) {
+            .mindmap-branches { grid-template-columns: 1fr; gap: 12px; }
+            .mindmap-center { width: 100px; height: 100px; font-size: 0.9rem; }
+        }
+
+        /* ===== ROADMAP SHOWCASE ===== */
+        .roadmap-showcase {
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            padding: 32px;
+            margin-top: 48px;
+            transition: background var(--transition), border-color var(--transition);
+        }
+        .roadmap-showcase .spec-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+        .roadmap-years {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .roadmap-year {
+            padding: 20px;
+            background: var(--bg);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+        .roadmap-year h4 {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+        .roadmap-year .items {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .roadmap-year .items .cat {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+        .roadmap-year .items .cat:first-child { margin-top: 0; }
+        .roadmap-year .items ul {
+            list-style: none;
+            padding-right: 12px;
+        }
+        .roadmap-year .items ul li {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            position: relative;
+            padding-right: 14px;
+        }
+        .roadmap-year .items ul li::before {
+            content: '•';
+            position: absolute;
+            right: 0;
+            color: var(--primary);
+        }
+        @media (max-width: 768px) {
+            .roadmap-years { grid-template-columns: 1fr; }
+            .roadmap-showcase { padding: 20px; }
+        }
+
+        /* ===== FEATURES GRID ===== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 48px;
+        }
+        .feature-card {
+            padding: 24px;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            transition: all var(--transition);
+        }
+        .feature-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+        .feature-card .icon { font-size: 2rem; margin-bottom: 8px; }
+        .feature-card h4 { font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
+        .feature-card p { font-size: 0.85rem; color: var(--text-secondary); }
+        @media (max-width: 768px) {
+            .features-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 480px) {
+            .features-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ===== PRICING ===== */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .price-card {
+            padding: 32px 24px;
+            text-align: center;
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            transition: all var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        .price-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-6px);
+        }
+        .price-card.featured {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(37,99,235,0.1), var(--shadow-md);
+        }
+        .price-card .badge {
+            display: inline-block;
+            padding: 4px 16px;
+            background: var(--primary);
+            color: white;
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            align-self: center;
+        }
+        .price-card .icon { font-size: 2.4rem; margin-bottom: 8px; }
+        .price-card .name { font-weight: 700; font-size: 1.1rem; }
+        .price-card .price {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin: 8px 0;
+        }
+        .price-card .price-note { font-size: 0.85rem; color: var(--text-muted); }
+        .price-card ul {
+            list-style: none;
+            text-align: right;
+            margin: 16px 0;
+            flex: 1;
+        }
+        .price-card ul li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .price-card ul li:last-child { border-bottom: none; }
+        .price-card ul li::before { content: '✓'; color: var(--success); font-weight: 700; }
+        .price-card .btn-price {
+            padding: 12px;
+            border-radius: 100px;
+            font-weight: 700;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+            transition: all var(--transition);
+            margin-top: 8px;
+        }
+        .price-card .btn-price:hover {
+            background: var(--primary);
+            color: white;
+        }
+        .price-card.featured .btn-price {
+            background: var(--primary);
+            color: white;
+        }
+        .price-card.featured .btn-price:hover {
+            background: var(--primary-dark);
+        }
+        @media (max-width: 768px) {
+            .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+        }
+
+        /* ===== CONSULTATION ===== */
+        .consultation-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            padding: 32px;
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            align-items: center;
+            transition: background var(--transition), border-color var(--transition);
+        }
+        .consultation-card .info h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; }
+        .consultation-card .info p { color: var(--text-secondary); }
+        .consultation-card .info ul {
+            list-style: none;
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .consultation-card .info ul li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+        .consultation-card .info ul li::before { content: '✓'; color: var(--success); font-weight: 700; }
+        .consultation-card .cta-area { text-align: center; }
+        @media (max-width: 768px) {
+            .consultation-card { grid-template-columns: 1fr; text-align: center; }
+            .consultation-card .info ul { align-items: center; }
+        }
+
+        /* ===== FREE VS PREMIUM ===== */
+        .compare-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 48px;
+        }
+        .compare-card {
+            padding: 24px;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            transition: all var(--transition);
+        }
+        .compare-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+        .compare-card h4 { font-weight: 700; font-size: 1.1rem; margin-bottom: 12px; }
+        .compare-card ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .compare-card ul li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .compare-card ul li::before { content: '✓'; color: var(--success); font-weight: 700; }
+        .compare-card.premium { border-color: var(--primary); background: rgba(37,99,235,0.03); }
+        @media (max-width: 768px) {
+            .compare-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+        }
+
+        /* ===== FAQ ===== */
+        .faq-list {
+            max-width: 700px;
+            margin: 48px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            transition: background var(--transition), border-color var(--transition);
+        }
+        .faq-item .q {
+            padding: 18px 24px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            user-select: none;
+            transition: background var(--transition);
+        }
+        .faq-item .q:hover { background: var(--bg); }
+        .faq-item .q .chevron {
+            width: 28px;
+            height: 28px;
+            border: 1.5px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            transition: transform var(--transition);
+            flex-shrink: 0;
+        }
+        .faq-item.open .q .chevron { transform: rotate(180deg); border-color: var(--primary); color: var(--primary); }
+        .faq-item .a {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .faq-item.open .a { max-height: 300px; padding: 0 24px 20px; }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 80px 24px;
+            text-align: center;
+            border-radius: var(--radius);
+            margin-top: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+        .final-cta h2 { color: white; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 12px; }
+        .final-cta p { color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 500px; margin: 0 auto 32px; }
+        .final-cta .btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .final-cta .btns .btn-white { background: white; color: var(--primary); }
+        .final-cta .btns .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+        .final-cta .btns .btn-outline-white {
+            padding: 14px 32px;
+            border: 2px solid white;
+            color: white;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all var(--transition);
+        }
+        .final-cta .btns .btn-outline-white:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .final-cta .note {
+            margin-top: 24px;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85rem;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--text-main);
+            padding: 60px 24px 32px;
+            color: rgba(255,255,255,0.5);
+            margin-top: 60px;
+            transition: background var(--transition);
+        }
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .footer-brand .logo {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .footer-brand p { max-width: 280px; line-height: 1.7; margin-top: 8px; }
+        .footer-col h5 {
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.35);
+            margin-bottom: 16px;
+        }
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .footer-col a {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            transition: color var(--transition);
+        }
+        .footer-col a:hover { color: white; }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding-top: 24px;
+            font-size: 0.8rem;
+        }
+        .footer-bottom .links { display: flex; gap: 20px; }
+        .footer-bottom .links a { color: rgba(255,255,255,0.4); transition: color var(--transition); }
+        .footer-bottom .links a:hover { color: white; }
+        @media (max-width: 768px) {
+            .footer-top { grid-template-columns: 1fr 1fr; gap: 24px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 480px) {
+            .footer-top { grid-template-columns: 1fr; text-align: center; }
+            .footer-brand p { margin: 8px auto 0; }
+        }
+
+        /* ===== MODAL ===== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+            z-index: 200;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-content {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 32px;
+            max-width: 480px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+            animation: modalSlide 0.3s ease-out;
+            transition: background var(--transition);
+        }
+        @keyframes modalSlide {
+            from { opacity: 0; transform: translateY(30px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .modal-content .close {
+            float: left;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color var(--transition);
+        }
+        .modal-content .close:hover { color: var(--text-main); }
+        .modal-content h3 { font-size: 1.3rem; font-weight: 700; margin: 16px 0 8px; }
+        .modal-content p { color: var(--text-secondary); }
+        .modal-content .preview-item {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+        .modal-content .preview-item:last-child { border-bottom: none; }
+        .modal-content .locked { color: var(--text-muted); opacity: 0.5; }
+        .modal-content .btn-modal {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary);
+            color: white;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            margin-top: 16px;
+            transition: all var(--transition);
+        }
+        .modal-content .btn-modal:hover { background: var(--primary-dark); }
+
+        /* ===== TOAST ===== */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 14px 28px;
+            background: var(--text-main);
+            color: white;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: var(--shadow-lg);
+            z-index: 300;
+            opacity: 0;
+            transition: all 0.4s ease;
+            pointer-events: none;
+        }
+        .toast.visible { opacity: 1; transform: translateX(-50%) translateY(0); }
+        .toast.hidden { opacity: 0; transform: translateX(-50%) translateY(20px); }
+
+        /* ===== RESPONSIVE HELPERS ===== */
+        @media (max-width: 768px) {
+            .section-padding { padding: 56px 0; }
+        }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+    </style>
+</head>
+<body>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" role="navigation" aria-label="الملاحة الرئيسية">
+        <a href="#" class="nav-logo" aria-label="توجيهي 2.0">
+            <span class="nav-logo-icon">🎓</span>
+            <span data-key="nav.logo">توجيهي 2.0</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#how-it-works" data-key="nav.how">كيف يعمل؟</a></li>
+            <li><a href="#roadmap" data-key="nav.roadmaps">خرائط التخصصات</a></li>
+            <li><a href="#consultation" data-key="nav.consultation">الاستشارة</a></li>
+            <li><a href="#pricing" data-key="nav.pricing">الأسعار</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="lang-switcher" id="langSwitcher" aria-label="تبديل اللغة">
+                <span class="lang-option active" data-lang="ar">عربي</span>
+                <span class="divider">|</span>
+                <span class="lang-option" data-lang="fr">FR</span>
+                <span class="divider">|</span>
+                <span class="lang-option" data-lang="en">EN</span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع المظلم">
+                <span id="themeIcon">☀️</span>
+            </button>
+            <a href="/login" class="btn-login" data-key="nav.login">تسجيل الدخول</a>
+            <a href="/register" class="btn-cta" data-key="nav.cta">ابدأ الآن</a>
+            <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="القائمة المتنقلة">
+        <a href="#how-it-works" data-key="nav.how">كيف يعمل؟</a>
+        <a href="#roadmap" data-key="nav.roadmaps">خرائط التخصصات</a>
+        <a href="#consultation" data-key="nav.consultation">الاستشارة</a>
+        <a href="#pricing" data-key="nav.pricing">الأسعار</a>
+        <a href="/login" data-key="nav.login">تسجيل الدخول</a>
+        <a href="/register" class="btn-cta-mobile" data-key="nav.cta">ابدأ الآن</a>
+    </div>
+
+    <!-- ===== HERO (CINEMATIC UPGRADE) ===== -->
+    <section class="hero" id="hero">
+        <!-- Video Background -->
+        <div class="hero-video-wrapper">
+            <video 
+                id="heroVideo"
+                muted 
+                playsinline 
+                autoplay 
+                loop 
+                poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='600'%3E%3Crect width='1000' height='600' fill='%230B1120'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='24' fill='%232563EB' text-anchor='middle' dy='.3em'%3E🎓 Tewjihi 2.0%3C/text%3E%3C/svg%3E"
+                preload="metadata"
+            >
+                <source src="https://res.cloudinary.com/dobbzalqp/video/upload/v1787422899/tykmd1tm6kg2xuki1si2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Cinematic Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-eyebrow">
+                    <span class="dot"></span>
+                    <span data-key="hero.badge">🚀 توجيهي 2.0</span>
+                </div>
+                <h1 class="hero-title-main">
+                    <span data-key="hero.title1">تخصصك هو</span><br>
+                    <span class="highlight" data-key="hero.title2">البداية فقط.</span>
+                </h1>
+                <p class="hero-sub-text" data-key="hero.sub">
+                    اكتشف كيف تحوّل تخصصك الجامعي إلى طريق واضح نحو المهارات، المشاريع، التدريب والعمل والنجاح.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="/register" class="btn-primary" data-key="hero.cta1">ابدأ رحلتك ←</a>
+                    <button class="btn-play" onclick="openVideoModal()" aria-label="شاهد الفيديو">
+                        <span class="play-icon">▶</span>
+                        <span data-key="hero.play">شاهد الفيديو</span>
+                    </button>
+                </div>
+
+                <div class="hero-trust-badge">
+                    <span>🇲🇷 <span data-key="hero.trust">مصمم خصيصًا للطلاب الموريتانيين</span></span>
+                    <span class="divider"></span>
+                    <span data-key="hero.sub_trust">شاهد كيف يعمل توجيهي 2.0</span>
+                </div>
+            </div>
+
+            <!-- Right Visual: Large Play Button (optional additional trigger) -->
+            <div class="hero-visual">
+                <button class="play-btn-large" onclick="openVideoModal()" aria-label="تشغيل الفيديو">
+                    <span class="icon">▶</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VIDEO MODAL ===== -->
+    <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="مشغل الفيديو">
+        <div class="video-modal-content">
+            <button class="video-modal-close" onclick="closeVideoModal()" aria-label="إغلاق الفيديو">✕</button>
+            <video id="modalVideo" controls playsinline preload="metadata">
+                <source src="https://res.cloudinary.com/dobbzalqp/video/upload/v1787422899/tykmd1tm6kg2xuki1si2.mp4" type="video/mp4">
+                <p>Your browser does not support the video tag.</p>
+            </video>
+        </div>
+    </div>
+
+    <!-- ===== STATS ===== -->
+    <div class="stats-bar">
+        <div class="stat-item"><div class="num" id="stat1">0</div><div class="label" data-key="stats.specializations">تخصص وبرنامج دراسي</div></div>
+        <div class="stat-item"><div class="num" id="stat2">0</div><div class="label" data-key="stats.institutions">مؤسسة جامعية</div></div>
+        <div class="stat-item"><div class="num" id="stat3">0</div><div class="label" data-key="stats.roadmaps">خارطة طريق</div></div>
+        <div class="stat-item"><div class="num" id="stat4">0</div><div class="label" data-key="stats.students">طالب يستفيدون</div></div>
+    </div>
+
+    <!-- ===== WHAT CHANGED ===== -->
+    <section class="section-padding" id="how-it-works">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="changed.label">تطور المنصة</span>
+                <h2 class="section-title" data-key="changed.title">توجيهي تغيّر.</h2>
+                <p class="section-desc" data-key="changed.desc">من التوجيه إلى النجاح — رحلة متكاملة لبناء مستقبلك.</p>
+            </div>
+            <div class="changed-grid">
+                <div class="changed-card">
+                    <div class="icon">🎯</div>
+                    <h3 data-key="changed.old_title">توجيهي سابقًا</h3>
+                    <p data-key="changed.old_desc">يساعدك على معرفة التخصصات والمؤسسات التي يمكنك الالتحاق بها.</p>
+                    <ul>
+                        <li data-key="changed.old_1">معرفة خيارات التوجيه</li>
+                        <li data-key="changed.old_2">البحث حسب المعدل</li>
+                        <li data-key="changed.old_3">اكتشاف المؤسسات</li>
+                        <li data-key="changed.old_4">مقارنة التخصصات</li>
+                    </ul>
+                </div>
+                <div class="changed-arrow">→</div>
+                <div class="changed-card featured">
+                    <div class="icon">🗺️</div>
+                    <h3 data-key="changed.new_title">توجيهي 2.0</h3>
+                    <p data-key="changed.new_desc">لا يتوقف عند اختيار التخصص، بل يساعدك على معرفة كيف تنجح فيه.</p>
+                    <ul>
+                        <li data-key="changed.new_1">خارطة طريق كاملة</li>
+                        <li data-key="changed.new_2">مهارات مطلوبة</li>
+                        <li data-key="changed.new_3">مشاريع عملية</li>
+                        <li data-key="changed.new_4">تدريبات</li>
+                        <li data-key="changed.new_5">مسارات مهنية</li>
+                        <li data-key="changed.new_6">فرص العمل</li>
+                        <li data-key="changed.new_7">مصادر التعلم</li>
+                        <li data-key="changed.new_8">استشارة بشرية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CORE VALUE JOURNEY ===== -->
+    <section class="section-padding" style="background:var(--bg);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="journey.label">رحلتك مع توجيهي</span>
+                <h2 class="section-title" data-key="journey.title">ماذا ستفعل بتخصصك؟</h2>
+            </div>
+            <div class="journey">
+                <div class="journey-step"><div class="num">01</div><div class="content"><h4 data-key="journey.1_title">تخصصك</h4><p data-key="journey.1_desc">"What did you get?"</p></div></div>
+                <div class="journey-step"><div class="num">02</div><div class="content"><h4 data-key="journey.2_title">افهم المجال</h4><p data-key="journey.2_desc">"Understand the real world of your field."</p></div></div>
+                <div class="journey-step"><div class="num">03</div><div class="content"><h4 data-key="journey.3_title">ابنِ المهارات</h4><p data-key="journey.3_desc">"Know exactly what to learn."</p></div></div>
+                <div class="journey-step"><div class="num">04</div><div class="content"><h4 data-key="journey.4_title">طبّق</h4><p data-key="journey.4_desc">"Build projects and gain experience."</p></div></div>
+                <div class="journey-step"><div class="num">05</div><div class="content"><h4 data-key="journey.5_title">ابدأ مسارك المهني</h4><p data-key="journey.5_desc">"Internships, jobs, freelancing, entrepreneurship."</p></div></div>
+                <div class="journey-step"><div class="num">06</div><div class="content"><h4 data-key="journey.6_title">ابنِ مستقبلك</h4><p data-key="journey.6_desc">"Turn your specialization into a valuable career."</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ROADMAP SHOWCASE ===== -->
+    <section class="section-padding" id="roadmap">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="roadmap.label">خارطة طريقك</span>
+                <h2 class="section-title" data-key="roadmap.title">خارطة طريق كاملة لتخصصك</h2>
+                <p class="section-desc" data-key="roadmap.desc">لن تحصل على مجرد نصائح عامة. ستكتشف مسارًا عمليًا مرتبًا يساعدك على معرفة ماذا تتعلم، ماذا تبني، وأين تبحث عن الفرص.</p>
+            </div>
+            <div class="roadmap-showcase">
+                <div class="spec-title" data-key="roadmap.example_spec">💻 Développement des systèmes d'information</div>
+                <div class="roadmap-years">
+                    <div class="roadmap-year">
+                        <h4 data-key="roadmap.year1">السنة الأولى</h4>
+                        <div class="items">
+                            <span class="cat" data-key="roadmap.actions">📚 الإجراءات</span>
+                            <ul><li data-key="roadmap.y1_a1">إنشاء LinkedIn</li><li data-key="roadmap.y1_a2">بناء GitHub</li><li data-key="roadmap.y1_a3">حضور فعاليات تقنية</li></ul>
+                            <span class="cat" data-key="roadmap.skills">🧠 المهارات</span>
+                            <ul><li data-key="roadmap.y1_s1">أساسيات البرمجة</li><li data-key="roadmap.y1_s2">Git & GitHub</li><li data-key="roadmap.y1_s3">قواعد البيانات</li><li data-key="roadmap.y1_s4">HTML/CSS/JavaScript</li></ul>
+                            <span class="cat" data-key="roadmap.internships">💼 التداريب</span>
+                            <ul><li data-key="roadmap.y1_i1">البحث عن أول تدريب</li><li data-key="roadmap.y1_i2">المشاركة في فعاليات تقنية</li></ul>
+                            <span class="cat" data-key="roadmap.projects">📁 المشاريع</span>
+                            <ul><li data-key="roadmap.y1_p1">مشروع ويب أول</li><li data-key="roadmap.y1_p2">نظام إدارة بسيط</li><li data-key="roadmap.y1_p3">Portfolio شخصي</li></ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-year">
+                        <h4 data-key="roadmap.year2">السنة الثانية</h4>
+                        <div class="items">
+                            <span class="cat" data-key="roadmap.actions">📚 الإجراءات</span>
+                            <ul><li data-key="roadmap.y2_a1">التخصص في مجال فرعي</li><li data-key="roadmap.y2_a2">المشاركة في مسابقات</li></ul>
+                            <span class="cat" data-key="roadmap.skills">🧠 المهارات</span>
+                            <ul><li data-key="roadmap.y2_s1">إطارات العمل المتقدمة</li><li data-key="roadmap.y2_s2">APIs & Microservices</li><li data-key="roadmap.y2_s3">DevOps أساسيات</li></ul>
+                            <span class="cat" data-key="roadmap.internships">💼 التداريب</span>
+                            <ul><li data-key="roadmap.y2_i1">تدريب صيفي في شركة</li><li data-key="roadmap.y2_i2">مشاريع مفتوحة المصدر</li></ul>
+                            <span class="cat" data-key="roadmap.projects">📁 المشاريع</span>
+                            <ul><li data-key="roadmap.y2_p1">تطبيق كامل</li><li data-key="roadmap.y2_p2">نظام إدارة محتوى</li></ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-year">
+                        <h4 data-key="roadmap.year3">السنة الثالثة</h4>
+                        <div class="items">
+                            <span class="cat" data-key="roadmap.actions">📚 الإجراءات</span>
+                            <ul><li data-key="roadmap.y3_a1">تحضير ملف المهني</li><li data-key="roadmap.y3_a2">التواصل مع الشركات</li></ul>
+                            <span class="cat" data-key="roadmap.skills">🧠 المهارات</span>
+                            <ul><li data-key="roadmap.y3_s1">الهندسة البرمجية</li><li data-key="roadmap.y3_s2">إدارة المشاريع</li><li data-key="roadmap.y3_s3">المهارات الشخصية</li></ul>
+                            <span class="cat" data-key="roadmap.internships">💼 التداريب</span>
+                            <ul><li data-key="roadmap.y3_i1">تدريب التخرج</li><li data-key="roadmap.y3_i2">مشروع مع شركة</li></ul>
+                            <span class="cat" data-key="roadmap.projects">📁 المشاريع</span>
+                            <ul><li data-key="roadmap.y3_p1">مشروع التخرج</li><li data-key="roadmap.y3_p2">Portfolio متكامل</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MIND MAP ===== -->
+    <section class="section-padding" style="background:var(--bg);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="mindmap.label">خارطة ذهنية</span>
+                <h2 class="section-title" data-key="mindmap.title">تخصصك في صورة واحدة</h2>
+                <p class="section-desc" data-key="mindmap.desc">هذا أكثر من مجرد نصيحة — إنها خارطة طريق متكاملة.</p>
+            </div>
+            <div class="mindmap-container">
+                <div class="mindmap-center">
+                    <span class="icon">🎯</span>
+                    <span data-key="mindmap.center">تخصصي</span>
+                </div>
+                <div class="mindmap-branches">
+                    <div class="mindmap-branch">
+                        <div class="title">🧠 <span data-key="mindmap.skills">Skills</span></div>
+                        <div class="items"><span>Programming</span><span>Communication</span><span>Languages</span><span>Tools</span></div>
+                    </div>
+                    <div class="mindmap-branch">
+                        <div class="title">📁 <span data-key="mindmap.projects">Projects</span></div>
+                        <div class="items"><span>Project 01</span><span>Project 02</span><span>Project 03</span></div>
+                    </div>
+                    <div class="mindmap-branch">
+                        <div class="title">💼 <span data-key="mindmap.internships">Internships</span></div>
+                        <div class="items"><span>Internship 01</span><span>Internship 02</span></div>
+                    </div>
+                    <div class="mindmap-branch">
+                        <div class="title">🌐 <span data-key="mindmap.opportunities">Opportunities</span></div>
+                        <div class="items"><span>Jobs</span><span>Freelancing</span><span>Scholarships</span><span>Entrepreneurship</span></div>
+                    </div>
+                    <div class="mindmap-branch" style="grid-column: 1 / -1; max-width: 400px; margin: 0 auto;">
+                        <div class="title">🏢 <span data-key="mindmap.organizations">Target Organizations</span></div>
+                        <div class="items"><span>Companies</span><span>Startups</span><span>Institutions</span><span>NGOs</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES GRID ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="features.label">ماذا تحتوي الخارطة؟</span>
+                <h2 class="section-title" data-key="features.title">كل ما تحتاجه في مكان واحد</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card"><div class="icon">🧠</div><h4 data-key="features.skills">المهارات</h4><p data-key="features.skills_desc">اعرف بالضبط المهارات التي تهم تخصصك.</p></div>
+                <div class="feature-card"><div class="icon">📁</div><h4 data-key="features.projects">المشاريع</h4><p data-key="features.projects_desc">ابنِ مشاريع تثبت ما تعرفه.</p></div>
+                <div class="feature-card"><div class="icon">💼</div><h4 data-key="features.internships">التداريب</h4><p data-key="features.internships_desc">افهم الخبرة التي يجب أن تسعى إليها.</p></div>
+                <div class="feature-card"><div class="icon">🎯</div><h4 data-key="features.actions">الإجراءات</h4><p data-key="features.actions_desc">اعرف الخطوات التي يجب اتخاذها ومتى.</p></div>
+                <div class="feature-card"><div class="icon">🌐</div><h4 data-key="features.opportunities">الفرص</h4><p data-key="features.opportunities_desc">اكتشف فرص العمل والدراسة المستقلة.</p></div>
+                <div class="feature-card"><div class="icon">📚</div><h4 data-key="features.resources">المصادر</h4><p data-key="features.resources_desc">احصل على مصادر تعلم مفيدة.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAREER SECTION ===== -->
+    <section class="section-padding" style="background:var(--bg);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="career.label">المسار المهني</span>
+                <h2 class="section-title" data-key="career.title">من الجامعة إلى سوق العمل</h2>
+                <p class="section-desc" data-key="career.desc">الخارطة لا تتوقف عند التخرج — إنها رحلة مستمرة.</p>
+            </div>
+            <div class="features-grid" style="margin-top:48px;">
+                <div class="feature-card"><div class="icon">💼</div><h4 data-key="career.employment">الوظيفة</h4><p data-key="career.employment_desc">ابنِ مهارات قابلة للتوظيف.</p></div>
+                <div class="feature-card"><div class="icon">🚀</div><h4 data-key="career.freelance">العمل الحر</h4><p data-key="career.freelance_desc">حوّل مهاراتك إلى خدمات.</p></div>
+                <div class="feature-card"><div class="icon">🏢</div><h4 data-key="career.entrepreneurship">ريادة الأعمال</h4><p data-key="career.entrepreneurship_desc">ابنِ منتجات وشركات.</p></div>
+                <div class="feature-card"><div class="icon">🎓</div><h4 data-key="career.graduate">الدراسات العليا</h4><p data-key="career.graduate_desc">Master / Doctorat / Research.</p></div>
+                <div class="feature-card" style="grid-column: span 1; max-width:400px; margin:0 auto;"><div class="icon">🌍</div><h4 data-key="career.international">فرص دولية</h4><p data-key="career.international_desc">منح / عمل عن بعد / فرص عالمية.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LOCAL RELEVANCE ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="local.label">مصمم للواقع الموريتاني</span>
+                <h2 class="section-title" data-key="local.title">مصمم للواقع الموريتاني 🇲🇷</h2>
+                <p class="section-desc" style="max-width:700px;" data-key="local.desc">توجيهي 2.0 مبني حول الطالب الموريتاني — من المؤسسات المحلية إلى الفرص الدولية.</p>
+            </div>
+            <div class="features-grid" style="margin-top:48px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="feature-card"><div class="icon">🏛️</div><h4 data-key="local.1">جامعات موريتانية</h4></div>
+                <div class="feature-card"><div class="icon">📚</div><h4 data-key="local.2">مسارات أكاديمية محلية</h4></div>
+                <div class="feature-card"><div class="icon">💼</div><h4 data-key="local.3">سياق التوظيف المحلي</h4></div>
+                <div class="feature-card"><div class="icon">🌍</div><h4 data-key="local.4">فرص دولية وعمل عن بعد</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONSULTATION ===== -->
+    <section class="section-padding" style="background:var(--bg);" id="consultation">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="consultation.label">استشارة بشرية</span>
+                <h2 class="section-title" data-key="consultation.title">وأحيانًا تحتاج إلى إنسان، وليس مجرد منصة.</h2>
+            </div>
+            <div class="consultation-card">
+                <div class="info">
+                    <h3 data-key="consultation.card_title">👤 استشارة مهنية</h3>
+                    <p data-key="consultation.card_desc">نقاش مباشر حول تخصصك، أهدافك، خياراتك، وما يمكنك فعله لبناء مسارك.</p>
+                    <ul>
+                        <li data-key="consultation.feature1">WhatsApp consultation</li>
+                        <li data-key="consultation.feature2">Personalized discussion</li>
+                        <li data-key="consultation.feature3">Google Meet option</li>
+                        <li data-key="consultation.feature4">Human guidance</li>
+                    </ul>
+                </div>
+                <div class="cta-area">
+                    <div style="font-size:3rem; margin-bottom:16px;">💬</div>
+                    <a href="/register" class="btn-primary" data-key="consultation.cta">أريد استشارة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FREE VS PREMIUM ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="compare.label">المقارنة</span>
+                <h2 class="section-title" data-key="compare.title">مجاني أم كامل؟</h2>
+            </div>
+            <div class="compare-grid">
+                <div class="compare-card">
+                    <h4 data-key="compare.free_title">📋 مجاني</h4>
+                    <ul>
+                        <li data-key="compare.free_1">إنشاء حساب</li>
+                        <li data-key="compare.free_2">استكشاف المنصة</li>
+                        <li data-key="compare.free_3">البحث عن التخصصات</li>
+                        <li data-key="compare.free_4">معاينة الخارطة</li>
+                        <li data-key="compare.free_5">اكتشاف الخدمات</li>
+                    </ul>
+                </div>
+                <div class="compare-card premium">
+                    <h4 data-key="compare.premium_title">🗺️ خارطة كاملة</h4>
+                    <ul>
+                        <li data-key="compare.premium_1">التفاصيل الكاملة</li>
+                        <li data-key="compare.premium_2">خطة السنوات</li>
+                        <li data-key="compare.premium_3">المهارات</li>
+                        <li data-key="compare.premium_4">المشاريع</li>
+                        <li data-key="compare.premium_5">التدريبات</li>
+                        <li data-key="compare.premium_6">المسارات المهنية</li>
+                        <li data-key="compare.premium_7">الموارد</li>
+                        <li data-key="compare.premium_8">النصائح المتخصصة</li>
+                    </ul>
+                </div>
+                <div class="compare-card">
+                    <h4 data-key="compare.consult_title">💬 استشارة بشرية</h4>
+                    <ul>
+                        <li data-key="compare.consult_1">نقاش شخصي</li>
+                        <li data-key="compare.consult_2">WhatsApp</li>
+                        <li data-key="compare.consult_3">Google Meet حسب الباقة</li>
+                        <li data-key="compare.consult_4">تحليل وضع الطالب</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="section-padding" style="background:var(--bg);" id="pricing">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="pricing.label">الأسعار</span>
+                <h2 class="section-title" data-key="pricing.title">اختر الباقة المناسبة لك</h2>
+                <p class="section-desc" data-key="pricing.desc">ابدأ مجانًا. افتح خارطتك عندما تكون مستعدًا.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="icon">🚀</div>
+                    <div class="name" data-key="pricing.starter">Starter</div>
+                    <div class="price" data-key="pricing.free">مجانًا</div>
+                    <div class="price-note" data-key="pricing.starter_note">للاستكشاف</div>
+                    <ul>
+                        <li data-key="pricing.starter_1">معاينة الخارطة</li>
+                        <li data-key="pricing.starter_2">بحث محدود</li>
+                        <li data-key="pricing.starter_3">دعم أساسي</li>
+                    </ul>
+                    <button class="btn-price" data-key="pricing.starter_btn">ابدأ الآن</button>
+                </div>
+                <div class="price-card featured">
+                    <span class="badge" data-key="pricing.popular">الأكثر طلبًا</span>
+                    <div class="icon">⭐</div>
+                    <div class="name" data-key="pricing.plus">Plus</div>
+                    <div class="price" data-key="pricing.plus_price">حسب الباقة</div>
+                    <div class="price-note" data-key="pricing.plus_note">للباحثين عن توجيه أعمق</div>
+                    <ul>
+                        <li data-key="pricing.plus_1">خارطة كاملة</li>
+                        <li data-key="pricing.plus_2">مهارات ومشاريع</li>
+                        <li data-key="pricing.plus_3">تدريبات ومسارات</li>
+                        <li data-key="pricing.plus_4">دعم أولوية</li>
+                    </ul>
+                    <button class="btn-price" data-key="pricing.plus_btn">عرض الباقات</button>
+                </div>
+                <div class="price-card">
+                    <div class="icon">👑</div>
+                    <div class="name" data-key="pricing.premium">Premium</div>
+                    <div class="price" data-key="pricing.premium_price">حسب الباقة</div>
+                    <div class="price-note" data-key="pricing.premium_note">لأقصى دعم</div>
+                    <ul>
+                        <li data-key="pricing.premium_1">كل ميزات Plus</li>
+                        <li data-key="pricing.premium_2">استشارة بشرية</li>
+                        <li data-key="pricing.premium_3">متابعة شخصية</li>
+                        <li data-key="pricing.premium_4">وصول مبكر</li>
+                    </ul>
+                    <button class="btn-price" data-key="pricing.premium_btn">عرض الباقات</button>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:32px; color:var(--text-muted); font-size:0.9rem;" data-key="pricing.note">💳 رصيد واحد = فتح خارطة تخصص كاملة. اكتشف الباقات داخل المنصة.</div>
+        </div>
+    </section>
+
+    <!-- ===== WHO IS IT FOR ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="audience.label">لمن هذه المنصة؟</span>
+                <h2 class="section-title" data-key="audience.title">توجيهي 2.0 لكل طالب</h2>
+            </div>
+            <div class="features-grid" style="margin-top:48px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                <div class="feature-card"><div class="icon">🎓</div><h4 data-key="audience.bac">طالب BAC</h4><p data-key="audience.bac_desc">بعد التوجيه، اكتشف كيف تنجح في تخصصك.</p></div>
+                <div class="feature-card"><div class="icon">📖</div><h4 data-key="audience.licence">طالب Licence</h4><p data-key="audience.licence_desc">افهم ماذا تفعل بتخصصك وابنِ مسارك.</p></div>
+                <div class="feature-card"><div class="icon">📚</div><h4 data-key="audience.master">طالب Master</h4><p data-key="audience.master_desc">ابنِ مسارًا أكاديميًا ومهنيًا أقوى.</p></div>
+                <div class="feature-card"><div class="icon">🚀</div><h4 data-key="audience.all">أي طالب يريد بناء مستقبله</h4><p data-key="audience.all_desc">حوّل تخصصك إلى قيمة عملية.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPECIALIZATION → SUCCESS ===== -->
+    <section style="padding:60px 24px; background:var(--primary); color:white; text-align:center;">
+        <div style="max-width:800px; margin:0 auto;">
+            <div style="font-size:clamp(1.8rem, 5vw, 3.2rem); font-weight:900; line-height:1.2;" data-key="formula.title">تخصصك ≠ مستقبلك بالكامل</div>
+            <div style="font-size:clamp(1.2rem, 2.5vw, 1.8rem); margin-top:24px; font-weight:700; opacity:0.9;" data-key="formula.equation">
+                تخصصك + مهاراتك + مشاريعك + خبرتك + علاقاتك + قراراتك = مستقبلك
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section-padding" style="background:var(--bg);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-key="faq.label">أسئلة شائعة</span>
+                <h2 class="section-title" data-key="faq.title">كل ما تريد معرفته</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="q" onclick="toggleFaq(this)"><span data-key="faq.q1">هل توجهي 2.0 هو نفس توجيهي القديم؟</span><span class="chevron">▾</span></div>
+                    <div class="a" data-key="faq.a1">لا. توجهي القديم ركز أساسًا على اكتشاف خيارات التوجيه، بينما توجهي 2.0 يضيف طبقة جديدة تركز على النجاح داخل التخصص وبناء المسار الأكاديمي والمهني.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="q" onclick="toggleFaq(this)"><span data-key="faq.q2">هل يجب أن أعرف تخصصي مسبقًا؟</span><span class="chevron">▾</span></div>
+                    <div class="a" data-key="faq.a2">توجيهي 2.0 مصمم خصوصًا للطالب الذي يعرف تخصصه ويريد أن يعرف ماذا يفعل به، كما يمكن للطلاب الجدد استكشاف المسارات المتاحة لهم.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="q" onclick="toggleFaq(this)"><span data-key="faq.q3">ماذا تحتوي خارطة الطريق؟</span><span class="chevron">▾</span></div>
+                    <div class="a" data-key="faq.a3">المهارات، المشاريع، التدريبات، الإجراءات، الموارد، المسارات المهنية والفرص المرتبطة بالتخصص.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="q" onclick="toggleFaq(this)"><span data-key="faq.q4">هل الخارطة نفسها تناسب الجميع؟</span><span class="chevron">▾</span></div>
+                    <div class="a" data-key="faq.a4">الخارطة تقدم إطارًا عمليًا عامًا للتخصص، ويمكن تخصيص التوجيه أكثر من خلال الاستشارة البشرية.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="q" onclick="toggleFaq(this)"><span data-key="faq.q5">هل يمكنني الحصول على استشارة شخصية؟</span><span class="chevron">▾</span></div>
+                    <div class="a" data-key="faq.a5">نعم، تتوفر إمكانية الانتقال من الخارطة الرقمية إلى الاستشارة المباشرة حسب الخدمات والباقات المتاحة داخل المنصة.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="final-cta">
+                <h2 data-key="final.title">لا تنتظر أن تكتشف طريقك بالصدفة.</h2>
+                <p data-key="final.sub">ابدأ من تخصصك، وابنِ منه طريقك.</p>
+                <div class="btns">
+                    <a href="/register" class="btn-white" data-key="final.cta1">ابدأ الآن</a>
+                    <a href="#roadmap" class="btn-outline-white" data-key="final.cta2">اكتشف خارطات التخصصات</a>
+                </div>
+                <div class="note" data-key="final.note">توجيهي 2.0 🇲🇷 — من التوجيه إلى النجاح.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo"><span style="background:var(--primary); padding:4px 8px; border-radius:8px; color:white;">🎓</span> <span data-key="footer.logo">توجيهي</span></div>
+                    <p data-key="footer.tagline">من التوجيه إلى النجاح.</p>
+                </div>
+                <div class="footer-col">
+                    <h5 data-key="footer.platform">المنصة</h5>
+                    <ul><li><a href="#" data-key="footer.home">الرئيسية</a></li><li><a href="#roadmap" data-key="footer.specializations">التخصصات</a></li><li><a href="#roadmap" data-key="footer.roadmaps">خارطات الطريق</a></li><li><a href="#consultation" data-key="footer.consultation">الاستشارة</a></li><li><a href="#pricing" data-key="footer.pricing">الأسعار</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h5 data-key="footer.support">الدعم</h5>
+                    <ul><li><a href="#" data-key="footer.help">مركز المساعدة</a></li><li><a href="#" data-key="footer.contact">تواصل معنا</a></li><li><a href="#faq" data-key="footer.faq">الأسئلة الشائعة</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h5 data-key="footer.account">الحساب</h5>
+                    <ul><li><a href="/login" data-key="footer.login">تسجيل الدخول</a></li><li><a href="/register" data-key="footer.register">إنشاء حساب</a></li><li><a href="#" data-key="footer.buy">شراء الأرصدة</a></li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span data-key="footer.copyright">© 2026 Tewjihi. جميع الحقوق محفوظة.</span>
+                <div class="links">
+                    <a href="#" data-key="footer.terms">شروط الاستخدام</a>
+                    <a href="#" data-key="footer.privacy">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== ROADMAP PREVIEW MODAL ===== -->
+    <div class="modal-overlay" id="roadmapModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('roadmapModal')">✕</span>
+            <h3 data-key="modal.title">🗺️ معاينة الخارطة</h3>
+            <p data-key="modal.sub">نظرة سريعة على ما تنتظره داخل المنصة.</p>
+            <div class="preview-item"><span data-key="modal.specialization">التخصص</span> <span id="modalSpec">—</span></div>
+            <div class="preview-item"><span data-key="modal.level">المستوى</span> <span id="modalLevel">—</span></div>
+            <div class="preview-item locked"><span data-key="modal.year1">السنة الأولى</span> <span>🔒</span></div>
+            <div class="preview-item locked"><span data-key="modal.year2">السنة الثانية</span> <span>🔒</span></div>
+            <div class="preview-item locked"><span data-key="modal.year3">السنة الثالثة</span> <span>🔒</span></div>
+            <div class="preview-item locked"><span data-key="modal.skills">المهارات</span> <span>🔒</span></div>
+            <div class="preview-item locked"><span data-key="modal.projects">المشاريع</span> <span>🔒</span></div>
+            <div class="preview-item locked"><span data-key="modal.internships">التدريبات</span> <span>🔒</span></div>
+            <div style="text-align:center; margin:16px 0; padding:12px; background:var(--primary-light); border-radius:8px; color:var(--primary); font-weight:600;" data-key="modal.locked">🔒 الخارطة الكاملة متاحة داخل المنصة</div>
+            <a href="/register" class="btn-modal" data-key="modal.cta">ابدأ الآن</a>
+        </div>
+    </div>
+
+    <script>
+        // ================================================================
+        // TRANSLATIONS
+        // ================================================================
+        const translations = {
+            ar: {
+                'nav.logo': 'توجيهي 2.0',
+                'nav.how': 'كيف يعمل؟',
+                'nav.roadmaps': 'خرائط التخصصات',
+                'nav.consultation': 'الاستشارة',
+                'nav.pricing': 'الأسعار',
+                'nav.login': 'تسجيل الدخول',
+                'nav.cta': 'ابدأ الآن',
+                'hero.badge': '🚀 توجيهي 2.0',
+                'hero.title1': 'تخصصك هو',
+                'hero.title2': 'البداية فقط.',
+                'hero.sub': 'اكتشف كيف تحوّل تخصصك الجامعي إلى طريق واضح نحو المهارات، المشاريع، التدريب والعمل والنجاح.',
+                'hero.cta1': 'ابدأ رحلتك ←',
+                'hero.play': 'شاهد الفيديو',
+                'hero.trust': 'مصمم خصيصًا للطلاب الموريتانيين',
+                'hero.sub_trust': 'شاهد كيف يعمل توجيهي 2.0',
+                'stats.specializations': 'تخصص وبرنامج دراسي',
+                'stats.institutions': 'مؤسسة جامعية',
+                'stats.roadmaps': 'خارطة طريق',
+                'stats.students': 'طالب يستفيدون',
+                'changed.label': 'تطور المنصة',
+                'changed.title': 'توجيهي تغيّر.',
+                'changed.desc': 'من التوجيه إلى النجاح — رحلة متكاملة لبناء مستقبلك.',
+                'changed.old_title': 'توجيهي سابقًا',
+                'changed.old_desc': 'يساعدك على معرفة التخصصات والمؤسسات التي يمكنك الالتحاق بها.',
+                'changed.old_1': 'معرفة خيارات التوجيه',
+                'changed.old_2': 'البحث حسب المعدل',
+                'changed.old_3': 'اكتشاف المؤسسات',
+                'changed.old_4': 'مقارنة التخصصات',
+                'changed.new_title': 'توجيهي 2.0',
+                'changed.new_desc': 'لا يتوقف عند اختيار التخصص، بل يساعدك على معرفة كيف تنجح فيه.',
+                'changed.new_1': 'خارطة طريق كاملة',
+                'changed.new_2': 'مهارات مطلوبة',
+                'changed.new_3': 'مشاريع عملية',
+                'changed.new_4': 'تدريبات',
+                'changed.new_5': 'مسارات مهنية',
+                'changed.new_6': 'فرص العمل',
+                'changed.new_7': 'مصادر التعلم',
+                'changed.new_8': 'استشارة بشرية',
+                'journey.label': 'رحلتك مع توجيهي',
+                'journey.title': 'ماذا ستفعل بتخصصك؟',
+                'journey.1_title': 'تخصصك',
+                'journey.1_desc': '"What did you get?"',
+                'journey.2_title': 'افهم المجال',
+                'journey.2_desc': '"Understand the real world of your field."',
+                'journey.3_title': 'ابنِ المهارات',
+                'journey.3_desc': '"Know exactly what to learn."',
+                'journey.4_title': 'طبّق',
+                'journey.4_desc': '"Build projects and gain experience."',
+                'journey.5_title': 'ابدأ مسارك المهني',
+                'journey.5_desc': '"Internships, jobs, freelancing, entrepreneurship."',
+                'journey.6_title': 'ابنِ مستقبلك',
+                'journey.6_desc': '"Turn your specialization into a valuable career."',
+                'roadmap.label': 'خارطة طريقك',
+                'roadmap.title': 'خارطة طريق كاملة لتخصصك',
+                'roadmap.desc': 'لن تحصل على مجرد نصائح عامة. ستكتشف مسارًا عمليًا مرتبًا يساعدك على معرفة ماذا تتعلم، ماذا تبني، وأين تبحث عن الفرص.',
+                'roadmap.example_spec': '💻 Développement des systèmes d\'information',
+                'roadmap.year1': 'السنة الأولى',
+                'roadmap.actions': '📚 الإجراءات',
+                'roadmap.skills': '🧠 المهارات',
+                'roadmap.internships': '💼 التداريب',
+                'roadmap.projects': '📁 المشاريع',
+                'roadmap.y1_a1': 'إنشاء LinkedIn',
+                'roadmap.y1_a2': 'بناء GitHub',
+                'roadmap.y1_a3': 'حضور فعاليات تقنية',
+                'roadmap.y1_s1': 'أساسيات البرمجة',
+                'roadmap.y1_s2': 'Git & GitHub',
+                'roadmap.y1_s3': 'قواعد البيانات',
+                'roadmap.y1_s4': 'HTML/CSS/JavaScript',
+                'roadmap.y1_i1': 'البحث عن أول تدريب',
+                'roadmap.y1_i2': 'المشاركة في فعاليات تقنية',
+                'roadmap.y1_p1': 'مشروع ويب أول',
+                'roadmap.y1_p2': 'نظام إدارة بسيط',
+                'roadmap.y1_p3': 'Portfolio شخصي',
+                'roadmap.year2': 'السنة الثانية',
+                'roadmap.y2_a1': 'التخصص في مجال فرعي',
+                'roadmap.y2_a2': 'المشاركة في مسابقات',
+                'roadmap.y2_s1': 'إطارات العمل المتقدمة',
+                'roadmap.y2_s2': 'APIs & Microservices',
+                'roadmap.y2_s3': 'DevOps أساسيات',
+                'roadmap.y2_i1': 'تدريب صيفي في شركة',
+                'roadmap.y2_i2': 'مشاريع مفتوحة المصدر',
+                'roadmap.y2_p1': 'تطبيق كامل',
+                'roadmap.y2_p2': 'نظام إدارة محتوى',
+                'roadmap.year3': 'السنة الثالثة',
+                'roadmap.y3_a1': 'تحضير ملف المهني',
+                'roadmap.y3_a2': 'التواصل مع الشركات',
+                'roadmap.y3_s1': 'الهندسة البرمجية',
+                'roadmap.y3_s2': 'إدارة المشاريع',
+                'roadmap.y3_s3': 'المهارات الشخصية',
+                'roadmap.y3_i1': 'تدريب التخرج',
+                'roadmap.y3_i2': 'مشروع مع شركة',
+                'roadmap.y3_p1': 'مشروع التخرج',
+                'roadmap.y3_p2': 'Portfolio متكامل',
+                'mindmap.label': 'خارطة ذهنية',
+                'mindmap.title': 'تخصصك في صورة واحدة',
+                'mindmap.desc': 'هذا أكثر من مجرد نصيحة — إنها خارطة طريق متكاملة.',
+                'mindmap.center': 'تخصصي',
+                'mindmap.skills': 'Skills',
+                'mindmap.projects': 'Projects',
+                'mindmap.internships': 'Internships',
+                'mindmap.opportunities': 'Opportunities',
+                'mindmap.organizations': 'Target Organizations',
+                'features.label': 'ماذا تحتوي الخارطة؟',
+                'features.title': 'كل ما تحتاجه في مكان واحد',
+                'features.skills': 'المهارات',
+                'features.skills_desc': 'اعرف بالضبط المهارات التي تهم تخصصك.',
+                'features.projects': 'المشاريع',
+                'features.projects_desc': 'ابنِ مشاريع تثبت ما تعرفه.',
+                'features.internships': 'التداريب',
+                'features.internships_desc': 'افهم الخبرة التي يجب أن تسعى إليها.',
+                'features.actions': 'الإجراءات',
+                'features.actions_desc': 'اعرف الخطوات التي يجب اتخاذها ومتى.',
+                'features.opportunities': 'الفرص',
+                'features.opportunities_desc': 'اكتشف فرص العمل والدراسة المستقلة.',
+                'features.resources': 'المصادر',
+                'features.resources_desc': 'احصل على مصادر تعلم مفيدة.',
+                'career.label': 'المسار المهني',
+                'career.title': 'من الجامعة إلى سوق العمل',
+                'career.desc': 'الخارطة لا تتوقف عند التخرج — إنها رحلة مستمرة.',
+                'career.employment': 'الوظيفة',
+                'career.employment_desc': 'ابنِ مهارات قابلة للتوظيف.',
+                'career.freelance': 'العمل الحر',
+                'career.freelance_desc': 'حوّل مهاراتك إلى خدمات.',
+                'career.entrepreneurship': 'ريادة الأعمال',
+                'career.entrepreneurship_desc': 'ابنِ منتجات وشركات.',
+                'career.graduate': 'الدراسات العليا',
+                'career.graduate_desc': 'Master / Doctorat / Research.',
+                'career.international': 'فرص دولية',
+                'career.international_desc': 'منح / عمل عن بعد / فرص عالمية.',
+                'local.label': 'مصمم للواقع الموريتاني',
+                'local.title': 'مصمم للواقع الموريتاني 🇲🇷',
+                'local.desc': 'توجيهي 2.0 مبني حول الطالب الموريتاني — من المؤسسات المحلية إلى الفرص الدولية.',
+                'local.1': 'جامعات موريتانية',
+                'local.2': 'مسارات أكاديمية محلية',
+                'local.3': 'سياق التوظيف المحلي',
+                'local.4': 'فرص دولية وعمل عن بعد',
+                'consultation.label': 'استشارة بشرية',
+                'consultation.title': 'وأحيانًا تحتاج إلى إنسان، وليس مجرد منصة.',
+                'consultation.card_title': '👤 استشارة مهنية',
+                'consultation.card_desc': 'نقاش مباشر حول تخصصك، أهدافك، خياراتك، وما يمكنك فعله لبناء مسارك.',
+                'consultation.feature1': 'WhatsApp consultation',
+                'consultation.feature2': 'Personalized discussion',
+                'consultation.feature3': 'Google Meet option',
+                'consultation.feature4': 'Human guidance',
+                'consultation.cta': 'أريد استشارة',
+                'compare.label': 'المقارنة',
+                'compare.title': 'مجاني أم كامل؟',
+                'compare.free_title': '📋 مجاني',
+                'compare.free_1': 'إنشاء حساب',
+                'compare.free_2': 'استكشاف المنصة',
+                'compare.free_3': 'البحث عن التخصصات',
+                'compare.free_4': 'معاينة الخارطة',
+                'compare.free_5': 'اكتشاف الخدمات',
+                'compare.premium_title': '🗺️ خارطة كاملة',
+                'compare.premium_1': 'التفاصيل الكاملة',
+                'compare.premium_2': 'خطة السنوات',
+                'compare.premium_3': 'المهارات',
+                'compare.premium_4': 'المشاريع',
+                'compare.premium_5': 'التدريبات',
+                'compare.premium_6': 'المسارات المهنية',
+                'compare.premium_7': 'الموارد',
+                'compare.premium_8': 'النصائح المتخصصة',
+                'compare.consult_title': '💬 استشارة بشرية',
+                'compare.consult_1': 'نقاش شخصي',
+                'compare.consult_2': 'WhatsApp',
+                'compare.consult_3': 'Google Meet حسب الباقة',
+                'compare.consult_4': 'تحليل وضع الطالب',
+                'pricing.label': 'الأسعار',
+                'pricing.title': 'اختر الباقة المناسبة لك',
+                'pricing.desc': 'ابدأ مجانًا. افتح خارطتك عندما تكون مستعدًا.',
+                'pricing.starter': 'Starter',
+                'pricing.free': 'مجانًا',
+                'pricing.starter_note': 'للاستكشاف',
+                'pricing.starter_1': 'معاينة الخارطة',
+                'pricing.starter_2': 'بحث محدود',
+                'pricing.starter_3': 'دعم أساسي',
+                'pricing.starter_btn': 'ابدأ الآن',
+                'pricing.popular': 'الأكثر طلبًا',
+                'pricing.plus': 'Plus',
+                'pricing.plus_price': 'حسب الباقة',
+                'pricing.plus_note': 'للباحثين عن توجيه أعمق',
+                'pricing.plus_1': 'خارطة كاملة',
+                'pricing.plus_2': 'مهارات ومشاريع',
+                'pricing.plus_3': 'تدريبات ومسارات',
+                'pricing.plus_4': 'دعم أولوية',
+                'pricing.plus_btn': 'عرض الباقات',
+                'pricing.premium': 'Premium',
+                'pricing.premium_price': 'حسب الباقة',
+                'pricing.premium_note': 'لأقصى دعم',
+                'pricing.premium_1': 'كل ميزات Plus',
+                'pricing.premium_2': 'استشارة بشرية',
+                'pricing.premium_3': 'متابعة شخصية',
+                'pricing.premium_4': 'وصول مبكر',
+                'pricing.premium_btn': 'عرض الباقات',
+                'pricing.note': '💳 رصيد واحد = فتح خارطة تخصص كاملة. اكتشف الباقات داخل المنصة.',
+                'audience.label': 'لمن هذه المنصة؟',
+                'audience.title': 'توجيهي 2.0 لكل طالب',
+                'audience.bac': 'طالب BAC',
+                'audience.bac_desc': 'بعد التوجيه، اكتشف كيف تنجح في تخصصك.',
+                'audience.licence': 'طالب Licence',
+                'audience.licence_desc': 'افهم ماذا تفعل بتخصصك وابنِ مسارك.',
+                'audience.master': 'طالب Master',
+                'audience.master_desc': 'ابنِ مسارًا أكاديميًا ومهنيًا أقوى.',
+                'audience.all': 'أي طالب يريد بناء مستقبله',
+                'audience.all_desc': 'حوّل تخصصك إلى قيمة عملية.',
+                'formula.title': 'تخصصك ≠ مستقبلك بالكامل',
+                'formula.equation': 'تخصصك + مهاراتك + مشاريعك + خبرتك + علاقاتك + قراراتك = مستقبلك',
+                'faq.label': 'أسئلة شائعة',
+                'faq.title': 'كل ما تريد معرفته',
+                'faq.q1': 'هل توجهي 2.0 هو نفس توجيهي القديم؟',
+                'faq.a1': 'لا. توجهي القديم ركز أساسًا على اكتشاف خيارات التوجيه، بينما توجهي 2.0 يضيف طبقة جديدة تركز على النجاح داخل التخصص وبناء المسار الأكاديمي والمهني.',
+                'faq.q2': 'هل يجب أن أعرف تخصصي مسبقًا؟',
+                'faq.a2': 'توجيهي 2.0 مصمم خصوصًا للطالب الذي يعرف تخصصه ويريد أن يعرف ماذا يفعل به، كما يمكن للطلاب الجدد استكشاف المسارات المتاحة لهم.',
+                'faq.q3': 'ماذا تحتوي خارطة الطريق؟',
+                'faq.a3': 'المهارات، المشاريع، التدريبات، الإجراءات، الموارد، المسارات المهنية والفرص المرتبطة بالتخصص.',
+                'faq.q4': 'هل الخارطة نفسها تناسب الجميع؟',
+                'faq.a4': 'الخارطة تقدم إطارًا عمليًا عامًا للتخصص، ويمكن تخصيص التوجيه أكثر من خلال الاستشارة البشرية.',
+                'faq.q5': 'هل يمكنني الحصول على استشارة شخصية؟',
+                'faq.a5': 'نعم، تتوفر إمكانية الانتقال من الخارطة الرقمية إلى الاستشارة المباشرة حسب الخدمات والباقات المتاحة داخل المنصة.',
+                'final.title': 'لا تنتظر أن تكتشف طريقك بالصدفة.',
+                'final.sub': 'ابدأ من تخصصك، وابنِ منه طريقك.',
+                'final.cta1': 'ابدأ الآن',
+                'final.cta2': 'اكتشف خارطات التخصصات',
+                'final.note': 'توجيهي 2.0 🇲🇷 — من التوجيه إلى النجاح.',
+                'footer.logo': 'توجيهي',
+                'footer.tagline': 'من التوجيه إلى النجاح.',
+                'footer.platform': 'المنصة',
+                'footer.home': 'الرئيسية',
+                'footer.specializations': 'التخصصات',
+                'footer.roadmaps': 'خارطات الطريق',
+                'footer.consultation': 'الاستشارة',
+                'footer.pricing': 'الأسعار',
+                'footer.support': 'الدعم',
+                'footer.help': 'مركز المساعدة',
+                'footer.contact': 'تواصل معنا',
+                'footer.faq': 'الأسئلة الشائعة',
+                'footer.account': 'الحساب',
+                'footer.login': 'تسجيل الدخول',
+                'footer.register': 'إنشاء حساب',
+                'footer.buy': 'شراء الأرصدة',
+                'footer.copyright': '© 2026 Tewjihi. جميع الحقوق محفوظة.',
+                'footer.terms': 'شروط الاستخدام',
+                'footer.privacy': 'سياسة الخصوصية',
+                'modal.title': '🗺️ معاينة الخارطة',
+                'modal.sub': 'نظرة سريعة على ما تنتظره داخل المنصة.',
+                'modal.specialization': 'التخصص',
+                'modal.level': 'المستوى',
+                'modal.year1': 'السنة الأولى',
+                'modal.year2': 'السنة الثانية',
+                'modal.year3': 'السنة الثالثة',
+                'modal.skills': 'المهارات',
+                'modal.projects': 'المشاريع',
+                'modal.internships': 'التدريبات',
+                'modal.locked': '🔒 الخارطة الكاملة متاحة داخل المنصة',
+                'modal.cta': 'ابدأ الآن'
+            },
+            fr: {
+                'nav.logo': 'Tewjihi 2.0',
+                'nav.how': 'Comment ça marche ?',
+                'nav.roadmaps': 'Roadmaps',
+                'nav.consultation': 'Consultation',
+                'nav.pricing': 'Tarifs',
+                'nav.login': 'Connexion',
+                'nav.cta': 'Commencer',
+                'hero.badge': '🚀 Tewjihi 2.0',
+                'hero.title1': 'Votre spécialité est',
+                'hero.title2': 'le début.',
+                'hero.sub': 'Découvrez comment transformer votre spécialité universitaire en un chemin clair vers les compétences, les projets, les stages et la réussite.',
+                'hero.cta1': 'Commencez votre voyage ←',
+                'hero.play': 'Regarder la vidéo',
+                'hero.trust': 'Conçu spécialement pour les étudiants mauritaniens',
+                'hero.sub_trust': 'Découvrez comment fonctionne Tewjihi 2.0',
+                'stats.specializations': 'Spécialités et programmes',
+                'stats.institutions': 'Établissements universitaires',
+                'stats.roadmaps': 'Roadmaps',
+                'stats.students': 'Étudiants bénéficiaires',
+                'changed.label': 'Évolution de la plateforme',
+                'changed.title': 'Tewjihi a changé.',
+                'changed.desc': 'De l\'orientation à la réussite — un parcours intégré pour construire votre avenir.',
+                'changed.old_title': 'Tewjihi avant',
+                'changed.old_desc': 'Vous aide à connaître les spécialités et les établissements auxquels vous pouvez accéder.',
+                'changed.old_1': 'Connaître les options d\'orientation',
+                'changed.old_2': 'Recherche par moyenne',
+                'changed.old_3': 'Découvrir les établissements',
+                'changed.old_4': 'Comparer les spécialités',
+                'changed.new_title': 'Tewjihi 2.0',
+                'changed.new_desc': 'Ne s\'arrête pas au choix de la spécialité, mais vous aide à savoir comment y réussir.',
+                'changed.new_1': 'Roadmap complète',
+                'changed.new_2': 'Compétences requises',
+                'changed.new_3': 'Projets pratiques',
+                'changed.new_4': 'Stages',
+                'changed.new_5': 'Parcours professionnels',
+                'changed.new_6': 'Opportunités d\'emploi',
+                'changed.new_7': 'Ressources d\'apprentissage',
+                'changed.new_8': 'Consultation humaine',
+                'journey.label': 'Votre parcours avec Tewjihi',
+                'journey.title': 'Que ferez-vous de votre spécialité ?',
+                'journey.1_title': 'Votre spécialité',
+                'journey.1_desc': '"What did you get?"',
+                'journey.2_title': 'Comprendre le domaine',
+                'journey.2_desc': '"Understand the real world of your field."',
+                'journey.3_title': 'Construire des compétences',
+                'journey.3_desc': '"Know exactly what to learn."',
+                'journey.4_title': 'Appliquer',
+                'journey.4_desc': '"Build projects and gain experience."',
+                'journey.5_title': 'Commencer votre carrière',
+                'journey.5_desc': '"Internships, jobs, freelancing, entrepreneurship."',
+                'journey.6_title': 'Construire votre avenir',
+                'journey.6_desc': '"Turn your specialization into a valuable career."',
+                'roadmap.label': 'Votre roadmap',
+                'roadmap.title': 'Une roadmap complète pour votre spécialité',
+                'roadmap.desc': 'Vous n\'aurez pas de simples conseils généraux. Vous découvrirez un parcours pratique et structuré pour savoir quoi apprendre, quoi construire et où chercher des opportunités.',
+                'roadmap.example_spec': '💻 Développement des systèmes d\'information',
+                'roadmap.year1': 'Première année',
+                'roadmap.actions': '📚 Actions',
+                'roadmap.skills': '🧠 Compétences',
+                'roadmap.internships': '💼 Stages',
+                'roadmap.projects': '📁 Projets',
+                'roadmap.y1_a1': 'Créer LinkedIn',
+                'roadmap.y1_a2': 'Construire GitHub',
+                'roadmap.y1_a3': 'Participer à des événements tech',
+                'roadmap.y1_s1': 'Bases de programmation',
+                'roadmap.y1_s2': 'Git & GitHub',
+                'roadmap.y1_s3': 'Bases de données',
+                'roadmap.y1_s4': 'HTML/CSS/JavaScript',
+                'roadmap.y1_i1': 'Rechercher un premier stage',
+                'roadmap.y1_i2': 'Participer à des événements tech',
+                'roadmap.y1_p1': 'Premier projet web',
+                'roadmap.y1_p2': 'Système de gestion simple',
+                'roadmap.y1_p3': 'Portfolio personnel',
+                'roadmap.year2': 'Deuxième année',
+                'roadmap.y2_a1': 'Spécialisation dans un sous-domaine',
+                'roadmap.y2_a2': 'Participer à des compétitions',
+                'roadmap.y2_s1': 'Frameworks avancés',
+                'roadmap.y2_s2': 'APIs & Microservices',
+                'roadmap.y2_s3': 'Bases DevOps',
+                'roadmap.y2_i1': 'Stage d\'été en entreprise',
+                'roadmap.y2_i2': 'Projets open source',
+                'roadmap.y2_p1': 'Application complète',
+                'roadmap.y2_p2': 'Système de gestion de contenu',
+                'roadmap.year3': 'Troisième année',
+                'roadmap.y3_a1': 'Préparer un dossier professionnel',
+                'roadmap.y3_a2': 'Contacter les entreprises',
+                'roadmap.y3_s1': 'Génie logiciel',
+                'roadmap.y3_s2': 'Gestion de projet',
+                'roadmap.y3_s3': 'Compétences personnelles',
+                'roadmap.y3_i1': 'Stage de fin d\'études',
+                'roadmap.y3_i2': 'Projet avec une entreprise',
+                'roadmap.y3_p1': 'Projet de fin d\'études',
+                'roadmap.y3_p2': 'Portfolio complet',
+                'mindmap.label': 'Carte mentale',
+                'mindmap.title': 'Votre spécialité en une image',
+                'mindmap.desc': 'C\'est bien plus qu\'un simple conseil — c\'est une roadmap intégrée.',
+                'mindmap.center': 'Ma spécialité',
+                'mindmap.skills': 'Compétences',
+                'mindmap.projects': 'Projets',
+                'mindmap.internships': 'Stages',
+                'mindmap.opportunities': 'Opportunités',
+                'mindmap.organizations': 'Organisations cibles',
+                'features.label': 'Que contient la roadmap ?',
+                'features.title': 'Tout ce dont vous avez besoin en un seul endroit',
+                'features.skills': 'Compétences',
+                'features.skills_desc': 'Sachez exactement quelles compétences comptent.',
+                'features.projects': 'Projets',
+                'features.projects_desc': 'Construisez des projets qui prouvent ce que vous savez.',
+                'features.internships': 'Stages',
+                'features.internships_desc': 'Comprenez quelle expérience poursuivre.',
+                'features.actions': 'Actions',
+                'features.actions_desc': 'Sachez quelles actions entreprendre et quand.',
+                'features.opportunities': 'Opportunités',
+                'features.opportunities_desc': 'Découvrez les opportunités de carrière, de freelance et d\'études.',
+                'features.resources': 'Ressources',
+                'features.resources_desc': 'Obtenez des ressources d\'apprentissage utiles.',
+                'career.label': 'Parcours professionnel',
+                'career.title': 'De l\'université au marché du travail',
+                'career.desc': 'La roadmap ne s\'arrête pas à la diplomation — c\'est un voyage continu.',
+                'career.employment': 'Emploi',
+                'career.employment_desc': 'Construisez des compétences employables.',
+                'career.freelance': 'Freelance',
+                'career.freelance_desc': 'Transformez vos compétences en services.',
+                'career.entrepreneurship': 'Entrepreneuriat',
+                'career.entrepreneurship_desc': 'Construisez des produits et des entreprises.',
+                'career.graduate': 'Études supérieures',
+                'career.graduate_desc': 'Master / Doctorat / Recherche.',
+                'career.international': 'Opportunités internationales',
+                'career.international_desc': 'Bourses / travail à distance / opportunités mondiales.',
+                'local.label': 'Conçu pour la réalité mauritanienne',
+                'local.title': 'Conçu pour la réalité mauritanienne 🇲🇷',
+                'local.desc': 'Tewjihi 2.0 est construit autour de l\'étudiant mauritanien — des institutions locales aux opportunités internationales.',
+                'local.1': 'Universités mauritaniennes',
+                'local.2': 'Parcours académiques locaux',
+                'local.3': 'Contexte d\'emploi local',
+                'local.4': 'Opportunités internationales et travail à distance',
+                'consultation.label': 'Consultation humaine',
+                'consultation.title': 'Et parfois, vous avez besoin d\'un humain, pas seulement d\'une plateforme.',
+                'consultation.card_title': '👤 Consultation professionnelle',
+                'consultation.card_desc': 'Une discussion directe sur votre spécialité, vos objectifs, vos options et comment construire votre parcours.',
+                'consultation.feature1': 'Consultation WhatsApp',
+                'consultation.feature2': 'Discussion personnalisée',
+                'consultation.feature3': 'Option Google Meet',
+                'consultation.feature4': 'Accompagnement humain',
+                'consultation.cta': 'Je veux une consultation',
+                'compare.label': 'Comparaison',
+                'compare.title': 'Gratuit ou complet ?',
+                'compare.free_title': '📋 Gratuit',
+                'compare.free_1': 'Créer un compte',
+                'compare.free_2': 'Explorer la plateforme',
+                'compare.free_3': 'Rechercher des spécialités',
+                'compare.free_4': 'Aperçu de la roadmap',
+                'compare.free_5': 'Découvrir les services',
+                'compare.premium_title': '🗺️ Roadmap complète',
+                'compare.premium_1': 'Détails complets',
+                'compare.premium_2': 'Plan des années',
+                'compare.premium_3': 'Compétences',
+                'compare.premium_4': 'Projets',
+                'compare.premium_5': 'Stages',
+                'compare.premium_6': 'Parcours professionnels',
+                'compare.premium_7': 'Ressources',
+                'compare.premium_8': 'Conseils spécialisés',
+                'compare.consult_title': '💬 Consultation humaine',
+                'compare.consult_1': 'Discussion personnelle',
+                'compare.consult_2': 'WhatsApp',
+                'compare.consult_3': 'Google Meet selon forfait',
+                'compare.consult_4': 'Analyse de la situation de l\'étudiant',
+                'pricing.label': 'Tarifs',
+                'pricing.title': 'Choisissez le forfait qui vous convient',
+                'pricing.desc': 'Commencez gratuitement. Débloquez votre roadmap quand vous êtes prêt.',
+                'pricing.starter': 'Starter',
+                'pricing.free': 'Gratuit',
+                'pricing.starter_note': 'Pour explorer',
+                'pricing.starter_1': 'Aperçu de la roadmap',
+                'pricing.starter_2': 'Recherche limitée',
+                'pricing.starter_3': 'Support de base',
+                'pricing.starter_btn': 'Commencer',
+                'pricing.popular': 'Le plus demandé',
+                'pricing.plus': 'Plus',
+                'pricing.plus_price': 'Selon forfait',
+                'pricing.plus_note': 'Pour ceux qui cherchent un guide plus approfondi',
+                'pricing.plus_1': 'Roadmap complète',
+                'pricing.plus_2': 'Compétences et projets',
+                'pricing.plus_3': 'Stages et parcours',
+                'pricing.plus_4': 'Support prioritaire',
+                'pricing.plus_btn': 'Voir les forfaits',
+                'pricing.premium': 'Premium',
+                'pricing.premium_price': 'Selon forfait',
+                'pricing.premium_note': 'Pour un soutien maximal',
+                'pricing.premium_1': 'Toutes les fonctionnalités Plus',
+                'pricing.premium_2': 'Consultation humaine',
+                'pricing.premium_3': 'Suivi personnalisé',
+                'pricing.premium_4': 'Accès anticipé',
+                'pricing.premium_btn': 'Voir les forfaits',
+                'pricing.note': '💳 Un crédit = une roadmap complète. Découvrez les forfaits sur la plateforme.',
+                'audience.label': 'À qui s\'adresse cette plateforme ?',
+                'audience.title': 'Tewjihi 2.0 pour chaque étudiant',
+                'audience.bac': 'Étudiant BAC',
+                'audience.bac_desc': 'Après l\'orientation, découvrez comment réussir dans votre spécialité.',
+                'audience.licence': 'Étudiant Licence',
+                'audience.licence_desc': 'Comprenez quoi faire de votre spécialité et construisez votre parcours.',
+                'audience.master': 'Étudiant Master',
+                'audience.master_desc': 'Construisez un parcours académique et professionnel plus solide.',
+                'audience.all': 'Tout étudiant voulant construire son avenir',
+                'audience.all_desc': 'Transformez votre spécialité en valeur pratique.',
+                'formula.title': 'Votre spécialité ≠ tout votre avenir',
+                'formula.equation': 'Spécialité + Compétences + Projets + Expérience + Relations + Décisions = Avenir',
+                'faq.label': 'Questions fréquentes',
+                'faq.title': 'Tout ce que vous voulez savoir',
+                'faq.q1': 'Tewjihi 2.0 est-il le même que l\'ancien Tewjihi ?',
+                'faq.a1': 'Non. L\'ancien Tewjihi se concentrait principalement sur la découverte des options d\'orientation, tandis que Tewjihi 2.0 ajoute une nouvelle couche axée sur la réussite dans la spécialité et la construction du parcours académique et professionnel.',
+                'faq.q2': 'Dois-je connaître ma spécialité à l\'avance ?',
+                'faq.a2': 'Tewjihi 2.0 est spécialement conçu pour l\'étudiant qui connaît sa spécialité et veut savoir quoi en faire. Les nouveaux étudiants peuvent également explorer les parcours disponibles.',
+                'faq.q3': 'Que contient la roadmap ?',
+                'faq.a3': 'Compétences, projets, stages, actions, ressources, parcours professionnels et opportunités liées à la spécialité.',
+                'faq.q4': 'La roadmap convient-elle à tout le monde ?',
+                'faq.a4': 'La roadmap offre un cadre pratique général pour la spécialité, et l\'orientation peut être davantage personnalisée grâce à la consultation humaine.',
+                'faq.q5': 'Puis-je obtenir une consultation personnelle ?',
+                'faq.a5': 'Oui, il est possible de passer de la roadmap numérique à la consultation directe selon les services et forfaits disponibles sur la plateforme.',
+                'final.title': 'N\'attendez pas de découvrir votre chemin par hasard.',
+                'final.sub': 'Commencez par votre spécialité et construisez votre chemin.',
+                'final.cta1': 'Commencer maintenant',
+                'final.cta2': 'Découvrir les roadmaps',
+                'final.note': 'Tewjihi 2.0 🇲🇷 — De l\'orientation à la réussite.',
+                'footer.logo': 'Tewjihi',
+                'footer.tagline': 'De l\'orientation à la réussite.',
+                'footer.platform': 'Plateforme',
+                'footer.home': 'Accueil',
+                'footer.specializations': 'Spécialités',
+                'footer.roadmaps': 'Roadmaps',
+                'footer.consultation': 'Consultation',
+                'footer.pricing': 'Tarifs',
+                'footer.support': 'Support',
+                'footer.help': 'Centre d\'aide',
+                'footer.contact': 'Contactez-nous',
+                'footer.faq': 'FAQ',
+                'footer.account': 'Compte',
+                'footer.login': 'Connexion',
+                'footer.register': 'Créer un compte',
+                'footer.buy': 'Acheter des crédits',
+                'footer.copyright': '© 2026 Tewjihi. Tous droits réservés.',
+                'footer.terms': 'Conditions d\'utilisation',
+                'footer.privacy': 'Politique de confidentialité',
+                'modal.title': '🗺️ Aperçu de la roadmap',
+                'modal.sub': 'Un aperçu de ce qui vous attend sur la plateforme.',
+                'modal.specialization': 'Spécialité',
+                'modal.level': 'Niveau',
+                'modal.year1': 'Première année',
+                'modal.year2': 'Deuxième année',
+                'modal.year3': 'Troisième année',
+                'modal.skills': 'Compétences',
+                'modal.projects': 'Projets',
+                'modal.internships': 'Stages',
+                'modal.locked': '🔒 La roadmap complète est disponible sur la plateforme',
+                'modal.cta': 'Commencer maintenant'
+            },
+            en: {
+                'nav.logo': 'Tewjihi 2.0',
+                'nav.how': 'How it works',
+                'nav.roadmaps': 'Roadmaps',
+                'nav.consultation': 'Consultation',
+                'nav.pricing': 'Pricing',
+                'nav.login': 'Login',
+                'nav.cta': 'Get Started',
+                'hero.badge': '🚀 Tewjihi 2.0',
+                'hero.title1': 'Your specialization is',
+                'hero.title2': 'just the beginning.',
+                'hero.sub': 'Discover how to turn your university specialization into a clear path toward skills, projects, internships, and career success.',
+                'hero.cta1': 'Start your journey ←',
+                'hero.play': 'Watch the video',
+                'hero.trust': 'Designed specifically for Mauritanian students',
+                'hero.sub_trust': 'See how Tewjihi 2.0 works',
+                'stats.specializations': 'Specializations & programs',
+                'stats.institutions': 'University institutions',
+                'stats.roadmaps': 'Roadmaps',
+                'stats.students': 'Students benefiting',
+                'changed.label': 'Platform Evolution',
+                'changed.title': 'Tewjihi has changed.',
+                'changed.desc': 'From orientation to success — an integrated journey to build your future.',
+                'changed.old_title': 'Tewjihi before',
+                'changed.old_desc': 'Helps you discover the specializations and institutions you can join.',
+                'changed.old_1': 'Know your orientation options',
+                'changed.old_2': 'Search by grade',
+                'changed.old_3': 'Discover institutions',
+                'changed.old_4': 'Compare specializations',
+                'changed.new_title': 'Tewjihi 2.0',
+                'changed.new_desc': "Doesn't stop at choosing a specialization, but helps you succeed in it.",
+                'changed.new_1': 'Complete roadmap',
+                'changed.new_2': 'Required skills',
+                'changed.new_3': 'Practical projects',
+                'changed.new_4': 'Internships',
+                'changed.new_5': 'Career paths',
+                'changed.new_6': 'Job opportunities',
+                'changed.new_7': 'Learning resources',
+                'changed.new_8': 'Human consultation',
+                'journey.label': 'Your journey with Tewjihi',
+                'journey.title': 'What will you do with your specialization?',
+                'journey.1_title': 'Your specialization',
+                'journey.1_desc': '"What did you get?"',
+                'journey.2_title': 'Understand the field',
+                'journey.2_desc': '"Understand the real world of your field."',
+                'journey.3_title': 'Build skills',
+                'journey.3_desc': '"Know exactly what to learn."',
+                'journey.4_title': 'Apply',
+                'journey.4_desc': '"Build projects and gain experience."',
+                'journey.5_title': 'Start your career path',
+                'journey.5_desc': '"Internships, jobs, freelancing, entrepreneurship."',
+                'journey.6_title': 'Build your future',
+                'journey.6_desc': '"Turn your specialization into a valuable career."',
+                'roadmap.label': 'Your roadmap',
+                'roadmap.title': 'A complete roadmap for your specialization',
+                'roadmap.desc': "You won't get just general advice. You'll discover a practical, structured path that helps you know what to learn, what to build, and where to look for opportunities.",
+                'roadmap.example_spec': '💻 Développement des systèmes d\'information',
+                'roadmap.year1': 'Year 1',
+                'roadmap.actions': '📚 Actions',
+                'roadmap.skills': '🧠 Skills',
+                'roadmap.internships': '💼 Internships',
+                'roadmap.projects': '📁 Projects',
+                'roadmap.y1_a1': 'Create LinkedIn',
+                'roadmap.y1_a2': 'Build GitHub',
+                'roadmap.y1_a3': 'Attend tech events',
+                'roadmap.y1_s1': 'Programming basics',
+                'roadmap.y1_s2': 'Git & GitHub',
+                'roadmap.y1_s3': 'Databases',
+                'roadmap.y1_s4': 'HTML/CSS/JavaScript',
+                'roadmap.y1_i1': 'Search for first internship',
+                'roadmap.y1_i2': 'Participate in tech events',
+                'roadmap.y1_p1': 'First web project',
+                'roadmap.y1_p2': 'Simple management system',
+                'roadmap.y1_p3': 'Personal portfolio',
+                'roadmap.year2': 'Year 2',
+                'roadmap.y2_a1': 'Specialize in a subfield',
+                'roadmap.y2_a2': 'Participate in competitions',
+                'roadmap.y2_s1': 'Advanced frameworks',
+                'roadmap.y2_s2': 'APIs & Microservices',
+                'roadmap.y2_s3': 'DevOps basics',
+                'roadmap.y2_i1': 'Summer internship at a company',
+                'roadmap.y2_i2': 'Open source projects',
+                'roadmap.y2_p1': 'Full application',
+                'roadmap.y2_p2': 'Content management system',
+                'roadmap.year3': 'Year 3',
+                'roadmap.y3_a1': 'Prepare professional portfolio',
+                'roadmap.y3_a2': 'Reach out to companies',
+                'roadmap.y3_s1': 'Software engineering',
+                'roadmap.y3_s2': 'Project management',
+                'roadmap.y3_s3': 'Soft skills',
+                'roadmap.y3_i1': 'Graduation internship',
+                'roadmap.y3_i2': 'Project with a company',
+                'roadmap.y3_p1': 'Graduation project',
+                'roadmap.y3_p2': 'Complete portfolio',
+                'mindmap.label': 'Mind Map',
+                'mindmap.title': 'Your specialization in one image',
+                'mindmap.desc': "This is much more than advice — it's an integrated roadmap.",
+                'mindmap.center': 'My specialization',
+                'mindmap.skills': 'Skills',
+                'mindmap.projects': 'Projects',
+                'mindmap.internships': 'Internships',
+                'mindmap.opportunities': 'Opportunities',
+                'mindmap.organizations': 'Target Organizations',
+                'features.label': 'What does the roadmap contain?',
+                'features.title': 'Everything you need in one place',
+                'features.skills': 'Skills',
+                'features.skills_desc': 'Know exactly what skills matter.',
+                'features.projects': 'Projects',
+                'features.projects_desc': 'Build projects that prove what you know.',
+                'features.internships': 'Internships',
+                'features.internships_desc': 'Understand what experience to pursue.',
+                'features.actions': 'Actions',
+                'features.actions_desc': 'Know what actions to take and when.',
+                'features.opportunities': 'Opportunities',
+                'features.opportunities_desc': 'Discover career, freelance and study opportunities.',
+                'features.resources': 'Resources',
+                'features.resources_desc': 'Get useful learning resources.',
+                'career.label': 'Career Path',
+                'career.title': 'From university to the job market',
+                'career.desc': "The roadmap doesn't stop at graduation — it's a continuous journey.",
+                'career.employment': 'Employment',
+                'career.employment_desc': 'Build employable skills.',
+                'career.freelance': 'Freelance',
+                'career.freelance_desc': 'Turn your skills into services.',
+                'career.entrepreneurship': 'Entrepreneurship',
+                'career.entrepreneurship_desc': 'Build products and companies.',
+                'career.graduate': 'Graduate Studies',
+                'career.graduate_desc': 'Master / Doctorate / Research.',
+                'career.international': 'International Opportunities',
+                'career.international_desc': 'Scholarships / remote work / global opportunities.',
+                'local.label': 'Designed for Mauritanian reality',
+                'local.title': 'Designed for Mauritanian reality 🇲🇷',
+                'local.desc': 'Tewjihi 2.0 is built around the Mauritanian student — from local institutions to international opportunities.',
+                'local.1': 'Mauritanian universities',
+                'local.2': 'Local academic paths',
+                'local.3': 'Local employment context',
+                'local.4': 'International opportunities & remote work',
+                'consultation.label': 'Human Consultation',
+                'consultation.title': 'Sometimes you need a human, not just a platform.',
+                'consultation.card_title': '👤 Professional Consultation',
+                'consultation.card_desc': 'A direct discussion about your specialization, goals, options, and how to build your path.',
+                'consultation.feature1': 'WhatsApp consultation',
+                'consultation.feature2': 'Personalized discussion',
+                'consultation.feature3': 'Google Meet option',
+                'consultation.feature4': 'Human guidance',
+                'consultation.cta': 'I want a consultation',
+                'compare.label': 'Comparison',
+                'compare.title': 'Free or complete?',
+                'compare.free_title': '📋 Free',
+                'compare.free_1': 'Create account',
+                'compare.free_2': 'Explore platform',
+                'compare.free_3': 'Search for specializations',
+                'compare.free_4': 'Roadmap preview',
+                'compare.free_5': 'Discover services',
+                'compare.premium_title': '🗺️ Complete Roadmap',
+                'compare.premium_1': 'Full details',
+                'compare.premium_2': 'Year plan',
+                'compare.premium_3': 'Skills',
+                'compare.premium_4': 'Projects',
+                'compare.premium_5': 'Internships',
+                'compare.premium_6': 'Career paths',
+                'compare.premium_7': 'Resources',
+                'compare.premium_8': 'Specialized tips',
+                'compare.consult_title': '💬 Human Consultation',
+                'compare.consult_1': 'Personal discussion',
+                'compare.consult_2': 'WhatsApp',
+                'compare.consult_3': 'Google Meet depending on package',
+                'compare.consult_4': 'Student situation analysis',
+                'pricing.label': 'Pricing',
+                'pricing.title': 'Choose the right plan for you',
+                'pricing.desc': 'Start for free. Unlock your roadmap when you\'re ready.',
+                'pricing.starter': 'Starter',
+                'pricing.free': 'Free',
+                'pricing.starter_note': 'For exploration',
+                'pricing.starter_1': 'Roadmap preview',
+                'pricing.starter_2': 'Limited search',
+                'pricing.starter_3': 'Basic support',
+                'pricing.starter_btn': 'Get Started',
+                'pricing.popular': 'Most popular',
+                'pricing.plus': 'Plus',
+                'pricing.plus_price': 'By package',
+                'pricing.plus_note': 'For deeper guidance',
+                'pricing.plus_1': 'Complete roadmap',
+                'pricing.plus_2': 'Skills & projects',
+                'pricing.plus_3': 'Internships & paths',
+                'pricing.plus_4': 'Priority support',
+                'pricing.plus_btn': 'View packages',
+                'pricing.premium': 'Premium',
+                'pricing.premium_price': 'By package',
+                'pricing.premium_note': 'For maximum support',
+                'pricing.premium_1': 'All Plus features',
+                'pricing.premium_2': 'Human consultation',
+                'pricing.premium_3': 'Personalized follow-up',
+                'pricing.premium_4': 'Early access',
+                'pricing.premium_btn': 'View packages',
+                'pricing.note': '💳 One credit = one complete specialization roadmap. Discover packages inside the platform.',
+                'audience.label': 'Who is this for?',
+                'audience.title': 'Tewjihi 2.0 for every student',
+                'audience.bac': 'BAC Student',
+                'audience.bac_desc': 'After orientation, discover how to succeed in your specialization.',
+                'audience.licence': 'Licence Student',
+                'audience.licence_desc': 'Understand what to do with your specialization and build your path.',
+                'audience.master': 'Master Student',
+                'audience.master_desc': 'Build a stronger academic and career path.',
+                'audience.all': 'Any student who wants to build their future',
+                'audience.all_desc': 'Turn your specialization into practical value.',
+                'formula.title': 'Your specialization ≠ your entire future',
+                'formula.equation': 'Specialization + Skills + Projects + Experience + Connections + Decisions = Future',
+                'faq.label': 'Frequently Asked Questions',
+                'faq.title': 'Everything you need to know',
+                'faq.q1': 'Is Tewjihi 2.0 the same as the old Tewjihi?',
+                'faq.a1': 'No. The old Tewjihi focused primarily on discovering orientation options, while Tewjihi 2.0 adds a new layer focused on success within the specialization and building the academic and professional path.',
+                'faq.q2': 'Do I need to know my specialization in advance?',
+                'faq.a2': 'Tewjihi 2.0 is specifically designed for students who know their specialization and want to know what to do with it. New students can also explore the available paths.',
+                'faq.q3': 'What does the roadmap contain?',
+                'faq.a3': 'Skills, projects, internships, actions, resources, career paths, and opportunities related to the specialization.',
+                'faq.q4': 'Does the roadmap fit everyone?',
+                'faq.a4': 'The roadmap provides a general practical framework for the specialization, and guidance can be further personalized through human consultation.',
+                'faq.q5': 'Can I get a personal consultation?',
+                'faq.a5': 'Yes, it is possible to transition from the digital roadmap to direct consultation depending on the services and packages available on the platform.',
+                'final.title': 'Don\'t wait to discover your path by chance.',
+                'final.sub': 'Start with your specialization and build your path from it.',
+                'final.cta1': 'Start now',
+                'final.cta2': 'Discover specialization roadmaps',
+                'final.note': 'Tewjihi 2.0 🇲🇷 — From orientation to success.',
+                'footer.logo': 'Tewjihi',
+                'footer.tagline': 'From orientation to success.',
+                'footer.platform': 'Platform',
+                'footer.home': 'Home',
+                'footer.specializations': 'Specializations',
+                'footer.roadmaps': 'Roadmaps',
+                'footer.consultation': 'Consultation',
+                'footer.pricing': 'Pricing',
+                'footer.support': 'Support',
+                'footer.help': 'Help Center',
+                'footer.contact': 'Contact Us',
+                'footer.faq': 'FAQ',
+                'footer.account': 'Account',
+                'footer.login': 'Login',
+                'footer.register': 'Sign up',
+                'footer.buy': 'Buy credits',
+                'footer.copyright': '© 2026 Tewjihi. All rights reserved.',
+                'footer.terms': 'Terms of Use',
+                'footer.privacy': 'Privacy Policy',
+                'modal.title': '🗺️ Roadmap Preview',
+                'modal.sub': 'A quick look at what awaits you inside the platform.',
+                'modal.specialization': 'Specialization',
+                'modal.level': 'Level',
+                'modal.year1': 'Year 1',
+                'modal.year2': 'Year 2',
+                'modal.year3': 'Year 3',
+                'modal.skills': 'Skills',
+                'modal.projects': 'Projects',
+                'modal.internships': 'Internships',
+                'modal.locked': '🔒 The full roadmap is available inside the platform',
+                'modal.cta': 'Get Started'
+            }
+        };
+
+        let currentLang = localStorage.getItem('tewjihi-lang') || 'ar';
+        let currentTheme = localStorage.getItem('tewjihi-theme') || 'light';
+
+        // ================================================================
+        // LANGUAGE
+        // ================================================================
+        function applyLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('tewjihi-lang', lang);
+            
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.body.className = 'lang-' + lang;
+
+            document.querySelectorAll('.lang-option').forEach(el => {
+                el.classList.toggle('active', el.dataset.lang === lang);
+            });
+
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.dataset.key;
+                const translation = translations[lang]?.[key];
+                if (translation !== undefined) {
+                    if (el.tagName === 'INPUT' && el.hasAttribute('placeholder')) {
+                        el.placeholder = translation;
+                    } else {
+                        el.textContent = translation;
+                    }
+                }
+            });
+        }
+
+        function toggleLanguage() {
+            const langs = ['ar', 'fr', 'en'];
+            const idx = langs.indexOf(currentLang);
+            const next = langs[(idx + 1) % langs.length];
+            applyLanguage(next);
+            showToast('🌐 ' + (next === 'ar' ? 'العربية' : next === 'fr' ? 'Français' : 'English'));
+        }
+
+        // ================================================================
+        // THEME
+        // ================================================================
+        function applyTheme(theme) {
+            currentTheme = theme;
+            localStorage.setItem('tewjihi-theme', theme);
+            document.documentElement.setAttribute('data-theme', theme);
+            document.getElementById('themeIcon').textContent = theme === 'dark' ? '🌙' : '☀️';
+        }
+
+        function toggleTheme() {
+            applyTheme(currentTheme === 'light' ? 'dark' : 'light');
+        }
+
+        // ================================================================
+        // MOBILE MENU
+        // ================================================================
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.getElementById('hamburger');
+            menu.classList.toggle('open');
+            hamburger.setAttribute('aria-expanded', menu.classList.contains('open'));
+        }
+
+        // ================================================================
+        // FAQ
+        // ================================================================
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        }
+
+        // ================================================================
+        // MODAL
+        // ================================================================
+        function openModal(spec, level) {
+            document.getElementById('modalSpec').textContent = spec || '—';
+            document.getElementById('modalLevel').textContent = level || '—';
+            document.getElementById('roadmapModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ================================================================
+        // VIDEO MODAL - FIXED: uses same video as background
+        // ================================================================
+        function openVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('modalVideo');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            video.currentTime = 0;
+            video.play().catch(() => {});
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('modalVideo');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            video.pause();
+        }
+
+        // Close video modal on ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('videoModal');
+                if (modal.classList.contains('active')) {
+                    closeVideoModal();
+                }
+                const roadmapModal = document.getElementById('roadmapModal');
+                if (roadmapModal.classList.contains('active')) {
+                    closeModal('roadmapModal');
+                }
+            }
+        });
+
+        // Click outside video modal to close
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideoModal();
+            }
+        });
+
+        // ================================================================
+        // SEARCH
+        // ================================================================
+        function handleSearch() {
+            const input = document.getElementById('specInput');
+            const level = document.getElementById('levelSelect');
+            const validation = document.getElementById('searchValidation');
+            const result = document.getElementById('searchResult');
+
+            const spec = input.value.trim();
+            if (!spec) {
+                validation.classList.add('visible');
+                result.classList.remove('visible');
+                return;
+            }
+            validation.classList.remove('visible');
+
+            document.getElementById('resultSpec').textContent = spec;
+            document.getElementById('resultLevel').textContent = level.options[level.selectedIndex].text;
+            result.classList.add('visible');
+
+            // Also open modal preview
+            openModal(spec, level.options[level.selectedIndex].text);
+        }
+
+        // ================================================================
+        // STATS COUNTER
+        // ================================================================
+        function animateCounter(el, target, suffix = '') {
+            let current = 0;
+            const duration = 2000;
+            const steps = 60;
+            const increment = target / steps;
+            let count = 0;
+            const timer = setInterval(() => {
+                count++;
+                current = Math.min(Math.round(increment * count), target);
+                el.textContent = current + suffix;
+                if (count >= steps) {
+                    clearInterval(timer);
+                    el.textContent = target + suffix;
+                }
+            }, duration / steps);
+        }
+
+        function initStats() {
+            const stats = [
+                { el: document.getElementById('stat1'), target: 200, suffix: '+' },
+                { el: document.getElementById('stat2'), target: 39, suffix: '' },
+                { el: document.getElementById('stat3'), target: 450, suffix: '+' },
+                { el: document.getElementById('stat4'), target: 5000, suffix: '+' }
+            ];
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        stats.forEach(s => animateCounter(s.el, s.target, s.suffix));
+                        observer.disconnect();
+                    }
+                });
+            }, { threshold: 0.3 });
+            observer.observe(document.querySelector('.stats-bar'));
+        }
+
+        // ================================================================
+        // SCROLL REVEAL
+        // ================================================================
+        function initScrollReveal() {
+            const elements = document.querySelectorAll('.card, .feature-card, .changed-card, .price-card, .compare-card, .mindmap-branch, .roadmap-year, .consultation-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        }
+
+        // ================================================================
+        // TOAST
+        // ================================================================
+        let toastTimeout;
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = 'toast visible';
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.className = 'toast hidden';
+            }, 3000);
+        }
+
+        // ================================================================
+        // INIT
+        // ================================================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Apply saved settings
+            applyLanguage(currentLang);
+            applyTheme(currentTheme);
+
+            // Event listeners
+            document.getElementById('langSwitcher').addEventListener('click', toggleLanguage);
+            document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+            document.getElementById('hamburger').addEventListener('click', toggleMobileMenu);
+            
+            // Search elements might not exist in this version, but we keep the function
+            const searchBtn = document.getElementById('searchBtn');
+            const specInput = document.getElementById('specInput');
+            if (searchBtn) searchBtn.addEventListener('click', handleSearch);
+            if (specInput) {
+                specInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') handleSearch();
+                });
+                specInput.addEventListener('input', () => {
+                    const validation = document.getElementById('searchValidation');
+                    if (validation) validation.classList.remove('visible');
+                });
+            }
+
+            // Modal close on overlay click
+            document.querySelectorAll('.modal-overlay').forEach(overlay => {
+                overlay.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+
+            // Close mobile menu on link click
+            document.querySelectorAll('.mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.getElementById('mobileMenu').classList.remove('open');
+                    document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Init features
+            initStats();
+            initScrollReveal();
+
+            // Open first FAQ item by default
+            const firstFaq = document.querySelector('.faq-item');
+            if (firstFaq) firstFaq.classList.add('open');
+
+            // Pre-fill search if exists
+            setTimeout(() => {
+                const specInput = document.getElementById('specInput');
+                const levelSelect = document.getElementById('levelSelect');
+                if (specInput) specInput.value = 'Développement des systèmes d\'information';
+                if (levelSelect) levelSelect.value = 'Licence';
+            }, 500);
+        });
+    </script>
+</body>
+</html>
